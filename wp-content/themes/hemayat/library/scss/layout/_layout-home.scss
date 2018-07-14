@@ -1,0 +1,92 @@
+@import "base/variables";
+
+//main{
+//  overflow: hidden;
+//}
+
+header{
+  height:355px;
+  #inner-header{
+    position: relative;
+    .logo{
+      margin-top:54px;
+    }
+    .bonyad{
+      position: absolute;
+      left:100px;
+      top:0;
+    }
+  }
+  .navigation{
+    margin:55px 0 44px 0;
+    .nav-menu{
+      li{
+        background-color: $gray-light;
+        margin-left:24px;
+        float: right;
+        a{
+          @include size(118px, 24px);
+          display: inline-block;
+          text-align: center;
+          span{
+            line-height:1.7rem;
+            font-size:19px;
+          }
+        }
+        &:hover{
+          a{
+            span{
+              color: $red;
+            }
+          }
+        }
+        &:focus ,&.active{
+          background-color: $bg-color;
+          border:1.5px solid $red;
+          a{
+            span{
+              color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-slider{
+  background-color: $green-light;
+  .container{
+    padding:0;
+  }
+
+  .owl-carousel{
+    &.main_slider{
+      .owl-nav{
+        position: absolute;
+        margin-top: 0;
+        width: 100%;
+        top: 48%;
+        &.disabled{
+          display: block;
+        }
+        [class*='owl-']{
+          @include size(38px,44px);
+          position: absolute;
+          z-index: 10;
+          padding: 0;
+          margin: 0;
+        }
+        .owl-prev{
+          @include sprite(-82px,-558px);
+          left: -48px;
+        }
+        .owl-next{
+          @include sprite(-121px,-558px);
+          right: -48px;
+        }
+      }
+    }
+  }
+}
+

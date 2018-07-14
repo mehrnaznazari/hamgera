@@ -1,0 +1,753 @@
+/******************************************************************
+Site Name: Medrick Studio 
+Author: Mehrnaz Nazari
+
+Stylesheet: Main Stylesheet
+
+******************************************************************/
+/*********************
+IMPORTING PARTIALS
+These files are needed at the beginning so that we establish all
+our mixins, functions, and variables that we'll be using across
+the whole project.
+*********************/
+/* line 1, ../scss/base/_reset.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strike, strong, sub, sup, tt, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, nav, output, ruby, section,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 21, ../scss/base/_reset.scss */
+html {
+  line-height: 1;
+}
+
+/* line 25, ../scss/base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 29, ../scss/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 34, ../scss/base/_reset.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 40, ../scss/base/_reset.scss */
+q, blockquote {
+  quotes: none;
+}
+
+/* line 43, ../scss/base/_reset.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 48, ../scss/base/_reset.scss */
+a img {
+  border: none;
+}
+
+/* line 52, ../scss/base/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 178, ../scss/base/_mixins.scss */
+.transparent-background, form option, .form option {
+  background-color: transparent;
+  zoom: 1;
+}
+
+/* line 7, ../scss/base/_base.scss */
+body,
+body * {
+  direction: rtl;
+}
+
+/* body {
+	background: url(../images/up-left-corner.png) left top no-repeat, url(../images/center-vertical-tile.png) center center repeat-y, url(../images/center-end.png) center bottom no-repeat;
+	background-color: $bg-color;
+	background-size: auto;
+} */
+/* line 19, ../scss/base/_base.scss */
+*:focus {
+  outline: none;
+}
+
+/*================================
+		FORM ELEMENTS
+=================================*/
+/* line 27, ../scss/base/_base.scss */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+textarea,
+fieldset.row,
+select + label.select {
+  -webkit-user-select: auto;
+  -webkit-appearance: none;
+  font-family: "YekanBakh", sans-serif;
+  box-sizing: border-box;
+  margin-bottom: 0px;
+  text-align: left;
+  padding: 0 10px;
+  border: none;
+  width: 100%;
+}
+/* line 43, ../scss/base/_base.scss */
+input[type="text"].error,
+input[type="number"].error,
+input[type="email"].error,
+input[type="password"].error,
+textarea.error,
+fieldset.row.error,
+select + label.select.error {
+  border-color: rgba(239, 83, 80, 0.9) !important;
+}
+/* line 46, ../scss/base/_base.scss */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+fieldset.row:focus,
+select + label.select:focus {
+  background-color: transparent;
+}
+
+/* line 51, ../scss/base/_base.scss */
+form, .form {
+  box-sizing: border-box;
+  position: relative;
+  margin: 2.5% auto;
+  width: 100%;
+}
+/* line 56, ../scss/base/_base.scss */
+form .row-form, .form .row-form {
+  margin-bottom: 20px;
+  clear: both;
+}
+/* line 59, ../scss/base/_base.scss */
+form .row-form::before, form .row-form::after, form .form .row-form::after, .form form .row-form::after, .form .row-form::before, .form .row-form::after {
+  display: table;
+  content: ' ';
+}
+/* line 63, ../scss/base/_base.scss */
+form .row-form::after, .form .row-form::after {
+  clear: both;
+}
+/* line 68, ../scss/base/_base.scss */
+form label, .form label {
+  padding: 5px 5px 17px 5px;
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  color: #8e94a0;
+}
+/* line 76, ../scss/base/_base.scss */
+form input, form textarea, .form input, .form textarea {
+  background-color: transparent;
+  color: #240d35;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  height: 32px;
+}
+/* line 84, ../scss/base/_base.scss */
+form textarea, .form textarea {
+  min-width: 78px;
+  height: 34px;
+}
+/* line 88, ../scss/base/_base.scss */
+form input[type="submit"], .form input[type="submit"] {
+  height: 36px;
+}
+/* line 91, ../scss/base/_base.scss */
+form option, .form option {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/*================================
+		Button ELEMENTS
+=================================*/
+/* line 100, ../scss/base/_base.scss */
+button,
+.button, .btn, a.btn {
+  margin: 10px 0;
+  width: auto;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 0.375rem 0.938rem;
+  -webkit-appearance: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, text-shadow .15s ease-in-out;
+}
+/* line 113, ../scss/base/_base.scss */
+button.green,
+.button.green, .btn.green, a.btn.green {
+  min-width: 109px;
+  color: #0e193d;
+  border: 0px solid #96c735;
+  background-color: #96c735;
+}
+/* line 118, ../scss/base/_base.scss */
+button.green:active, button.green:hover,
+.button.green:active,
+.button.green:hover, .btn.green:active, .btn.green:hover, a.btn.green:active, a.btn.green:hover {
+  background-color: #8aba2b;
+  text-shadow: 0px 0 2px rgba(0, 0, 0, 0.3);
+}
+/* line 124, ../scss/base/_base.scss */
+button.green:focus,
+.button.green:focus, .btn.green:focus, a.btn.green:focus {
+  -webkit-box-shadow: 0 0 8px rgba(130, 132, 131, 0.5);
+  -moz-box-shadow: 0 0 8px rgba(130, 132, 131, 0.5);
+  box-shadow: 0 0 8px rgba(130, 132, 131, 0.5);
+}
+/* line 128, ../scss/base/_base.scss */
+button.blue,
+.button.blue, .btn.blue, a.btn.blue {
+  min-width: 109px;
+  color: #ffffff;
+  border: 0px solid #3399de;
+  background-color: #3399de;
+}
+/* line 133, ../scss/base/_base.scss */
+button.blue:active, button.blue:hover,
+.button.blue:active,
+.button.blue:hover, .btn.blue:active, .btn.blue:hover, a.btn.blue:active, a.btn.blue:hover {
+  font-weight: 400;
+  background-color: #3191d2;
+  text-shadow: 0px 0 2px rgba(0, 0, 0, 0.3);
+}
+/* line 139, ../scss/base/_base.scss */
+button.blue:focus,
+.button.blue:focus, .btn.blue:focus, a.btn.blue:focus {
+  -webkit-box-shadow: 0 0 8px rgba(130, 131, 132, 0.5);
+  -moz-box-shadow: 0 0 8px rgba(130, 131, 132, 0.5);
+  box-shadow: 0 0 8px rgba(130, 131, 132, 0.5);
+}
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  /* line 100, ../scss/base/_base.scss */
+  button,
+  .button, .btn, a.btn {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 823px) and (max-width: 1023px) {
+  /* line 100, ../scss/base/_base.scss */
+  button,
+  .button, .btn, a.btn {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 822px) {
+  /* line 100, ../scss/base/_base.scss */
+  button,
+  .button, .btn, a.btn {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 414px) {
+  /* line 100, ../scss/base/_base.scss */
+  button,
+  .button, .btn, a.btn {
+    font-size: 16px;
+  }
+}
+
+/* line 1, ../scss/base/_type.scss */
+body * {
+  font-family: "YekanBakh", sans-serif;
+  font-size: 15px;
+  color: #240d35;
+}
+
+/* line 12, ../scss/base/_type.scss */
+body {
+  background: url("../images/Pattern.png") repeat 0 0;
+}
+
+/* line 16, ../scss/base/_type.scss */
+ul {
+  padding: 0;
+}
+
+/* line 20, ../scss/base/_type.scss */
+li {
+  list-style-type: none;
+}
+
+/**
+ *
+ * RAW ELEMENT STYLES
+ *
+ **/
+/* line 31, ../scss/base/_type.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "YekanBakh", sans-serif;
+  font-weight: 300;
+  margin-bottom: 14px;
+  margin-top: 14px;
+  width: 100%;
+}
+
+/* line 45, ../scss/base/_type.scss */
+h1 {
+  font-size: 60px;
+  margin: 14px 0;
+}
+
+/* line 50, ../scss/base/_type.scss */
+h2 {
+  font-size: 48px;
+  margin: 12px 0;
+}
+
+/* line 55, ../scss/base/_type.scss */
+h3 {
+  font-size: 35px;
+  margin: 10px 0;
+}
+
+/* line 60, ../scss/base/_type.scss */
+h4 {
+  font-size: 24px;
+}
+
+/* line 64, ../scss/base/_type.scss */
+h5 {
+  font-size: 16px;
+}
+
+/* line 68, ../scss/base/_type.scss */
+h6 {
+  font-size: 14px;
+}
+
+/* line 72, ../scss/base/_type.scss */
+p {
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.2rem;
+  font-weight: 300;
+}
+
+/* line 78, ../scss/base/_type.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 82, ../scss/base/_type.scss */
+a {
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -ms-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+}
+/* line 87, ../scss/base/_type.scss */
+a:hover, a a:focus, a.active {
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -ms-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+  color: #5cf192;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/**
+ *
+ * TRANSFORMS AND STYLES AND ALIGNS
+ *
+ **/
+/* line 101, ../scss/base/_type.scss */
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+/* line 105, ../scss/base/_type.scss */
+.text-capitalized {
+  text-transform: capitalize !important;
+}
+
+/* line 109, ../scss/base/_type.scss */
+.center-aligned {
+  text-align: center !important;
+}
+
+/* line 113, ../scss/base/_type.scss */
+.left-aligned {
+  text-align: left !important;
+}
+
+/* line 117, ../scss/base/_type.scss */
+.right-aligned {
+  text-align: right !important;
+}
+
+/* line 121, ../scss/base/_type.scss */
+.rtl {
+  direction: rtl;
+}
+
+/* line 125, ../scss/base/_type.scss */
+.ltr {
+  direction: ltr;
+}
+
+/* line 129, ../scss/base/_type.scss */
+.no-padding {
+  padding: 0;
+}
+
+/* line 133, ../scss/base/_type.scss */
+.no-margin {
+  margin: 0 !important;
+}
+
+/* line 137, ../scss/base/_type.scss */
+.captalized {
+  text-transform: capitalize;
+}
+
+/* line 141, ../scss/base/_type.scss */
+.uppercased {
+  text-transform: capitalize;
+}
+
+/* line 145, ../scss/base/_type.scss */
+.right {
+  float: right;
+}
+
+/* line 148, ../scss/base/_type.scss */
+.left {
+  float: left;
+}
+
+/* line 152, ../scss/base/_type.scss */
+.clear-both {
+  clear: both;
+  height: 10px;
+}
+
+/* line 156, ../scss/base/_type.scss */
+.pointer {
+  cursor: pointer;
+}
+
+/* line 159, ../scss/base/_type.scss */
+.o-hidden {
+  overflow: hidden;
+}
+
+/**/
+/* line 165, ../scss/base/_type.scss */
+.container-fluid {
+  padding: 0;
+}
+
+/* line 168, ../scss/base/_type.scss */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* @media (min-width:576px){
+    .container{
+        max-width:540px;
+    }
+}
+@media (min-width:768px){
+    .container{
+        max-width:720px;
+    }
+} */
+@media (min-width: 414px) {
+  /* line 186, ../scss/base/_type.scss */
+  .container {
+    max-width: 375px;
+  }
+}
+@media (min-width: 576px) {
+  /* line 191, ../scss/base/_type.scss */
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 196, ../scss/base/_type.scss */
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 824px) {
+  /* line 201, ../scss/base/_type.scss */
+  .container {
+    max-width: 780px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 206, ../scss/base/_type.scss */
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 211, ../scss/base/_type.scss */
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1366px) {
+  /* line 216, ../scss/base/_type.scss */
+  .container {
+    max-width: 1230px;
+  }
+}
+/* line 222, ../scss/base/_type.scss */
+.sm-block {
+  display: block;
+}
+
+/* line 225, ../scss/base/_type.scss */
+.md-block {
+  display: none;
+}
+
+@media screen and (min-width: 415px) and (max-width: 823px) {
+  /* line 230, ../scss/base/_type.scss */
+  .md-block {
+    display: block;
+  }
+
+  /* line 233, ../scss/base/_type.scss */
+  .sm-block {
+    display: none;
+  }
+}
+@media screen and (min-width: 824px) {
+  /* line 238, ../scss/base/_type.scss */
+  .md-block, .sm-block {
+    display: none;
+  }
+}
+/* line 178, ../scss/base/_mixins.scss */
+.transparent-background, form option, .form option {
+  background-color: transparent;
+  zoom: 1;
+}
+
+/* BEGIN Light */
+/*noinspection ALL*/
+@font-face {
+  font-family: YekanBakh;
+  src: url("../fonts/Light/YekanBakh-Light.eot");
+  src: url("../fonts/Light/YekanBakh-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Light/YekanBakh-Light.woff") format("woff"), url("../fonts/Light/YekanBakh-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+/* END Light */
+/* BEGIN Regular */
+@font-face {
+  font-family: YekanBakh;
+  src: url("../fonts/Regular/YekanBakh-Regular.eot");
+  src: url("../fonts/Regular/YekanBakh-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Regular/YekanBakh-Regular.woff") format("woff"), url("../fonts/Regular/YekanBakh-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: YekanBakh;
+  src: url("../fonts/Regular/YekanBakh-Regular.eot");
+  src: url("../fonts/Regular/YekanBakh-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Regular/YekanBakh-Regular.woff") format("woff"), url("../fonts/Regular/YekanBakh-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* END Regular */
+/* BEGIN Medium */
+@font-face {
+  font-family: YekanBakh;
+  src: url("../fonts/Medium/YekanBakh-Medium.eot");
+  src: url("../fonts/Medium/YekanBakh-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Medium/YekanBakh-Medium.woff") format("woff"), url("../fonts/Medium/YekanBakh-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+/* END Medium */
+/* BEGIN Bold */
+@font-face {
+  font-family: YekanBakh;
+  src: url("../fonts/Bold/YekanBakh-Bold.eot");
+  src: url("../fonts/Bold/YekanBakh-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Bold/YekanBakh-Bold.woff") format("woff"), url("../fonts/Bold/YekanBakh-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: YekanBakh;
+  src: url("../fonts/Bold/YekanBakh-Bold.eot");
+  src: url("../fonts/Bold/YekanBakh-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Bold/YekanBakh-Bold.woff") format("woff"), url("../fonts/Bold/YekanBakh-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+/* END Bold */
+/* BEGIN Heavy */
+@font-face {
+  font-family: YekanBakh;
+  src: url("../fonts/Heavy/YekanBakh-Heavy.eot");
+  src: url("../fonts/Heavy/YekanBakh-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Heavy/YekanBakh-Heavy.woff") format("woff"), url("../fonts/Heavy/YekanBakh-Heavy.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+/* END Heavy */
+/* BEGIN Fat */
+@font-face {
+  font-family: YekanBakh;
+  src: url("../fonts/Fat/YekanBakh-Fat.eot");
+  src: url("../fonts/Fat/YekanBakh-Fat.eot?#iefix") format("embedded-opentype"), url("../fonts/Fat/YekanBakh-Fat.woff") format("woff"), url("../fonts/Fat/YekanBakh-Fat.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+/* END Fat */
+/* line 7, ../scss/layout/_layout-home.scss */
+header {
+  height: 355px;
+}
+/* line 9, ../scss/layout/_layout-home.scss */
+header #inner-header {
+  position: relative;
+}
+/* line 11, ../scss/layout/_layout-home.scss */
+header #inner-header .logo {
+  margin-top: 54px;
+}
+/* line 14, ../scss/layout/_layout-home.scss */
+header #inner-header .bonyad {
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+/* line 20, ../scss/layout/_layout-home.scss */
+header .navigation {
+  margin: 55px 0 44px 0;
+}
+/* line 23, ../scss/layout/_layout-home.scss */
+header .navigation .nav-menu li {
+  background-color: #f1f2f2;
+  margin-left: 24px;
+  float: right;
+}
+/* line 27, ../scss/layout/_layout-home.scss */
+header .navigation .nav-menu li a {
+  width: 118px;
+  height: 24px;
+  display: inline-block;
+  text-align: center;
+}
+/* line 31, ../scss/layout/_layout-home.scss */
+header .navigation .nav-menu li a span {
+  line-height: 1.7rem;
+  font-size: 19px;
+}
+/* line 38, ../scss/layout/_layout-home.scss */
+header .navigation .nav-menu li:hover a span {
+  color: #ed165a;
+}
+/* line 43, ../scss/layout/_layout-home.scss */
+header .navigation .nav-menu li:focus, header .navigation .nav-menu li.active {
+  background-color: #240d35;
+  border: 1.5px solid #ed165a;
+}
+/* line 47, ../scss/layout/_layout-home.scss */
+header .navigation .nav-menu li:focus a span, header .navigation .nav-menu li.active a span {
+  color: #ed165a;
+}
+
+/* line 57, ../scss/layout/_layout-home.scss */
+.main-slider {
+  background-color: #5cf192;
+}
+/* line 59, ../scss/layout/_layout-home.scss */
+.main-slider .container {
+  padding: 0;
+}
+/* line 65, ../scss/layout/_layout-home.scss */
+.main-slider .owl-carousel.main_slider .owl-nav {
+  position: absolute;
+  margin-top: 0;
+  width: 100%;
+  top: 48%;
+}
+/* line 70, ../scss/layout/_layout-home.scss */
+.main-slider .owl-carousel.main_slider .owl-nav.disabled {
+  display: block;
+}
+/* line 73, ../scss/layout/_layout-home.scss */
+.main-slider .owl-carousel.main_slider .owl-nav [class*='owl-'] {
+  width: 38px;
+  height: 44px;
+  position: absolute;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+}
+/* line 80, ../scss/layout/_layout-home.scss */
+.main-slider .owl-carousel.main_slider .owl-nav .owl-prev {
+  background-image: url("../images/main_sprite.png");
+  background-repeat: no-repeat;
+  background-position: -82px -558px;
+  background-color: transparent;
+  left: -48px;
+}
+/* line 84, ../scss/layout/_layout-home.scss */
+.main-slider .owl-carousel.main_slider .owl-nav .owl-next {
+  background-image: url("../images/main_sprite.png");
+  background-repeat: no-repeat;
+  background-position: -121px -558px;
+  background-color: transparent;
+  right: -48px;
+}

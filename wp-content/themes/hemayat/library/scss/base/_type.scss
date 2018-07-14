@@ -1,0 +1,241 @@
+body * {
+	font-family: $base-font;
+	font-size: $base-font-size;
+	color: $base-color;
+}
+
+body, html{
+	//background-color:$bg-color;
+	//width:100%;
+	//height:100%;
+}
+body{
+	background: url("../images/Pattern.png") repeat 0 0;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+
+/**
+ *
+ * RAW ELEMENT STYLES
+ *
+ **/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	//color: $header-color;
+	font-family: $base-font;
+	font-weight: $base-font-weight;
+	margin-bottom: 14px;
+	margin-top: 14px;
+	width: 100%;
+}
+
+h1 {
+	font-size: 60px;
+	margin: 14px 0;
+}
+
+h2 {
+	font-size: 48px;
+	margin: 12px 0;
+}
+
+h3 {
+	font-size: 35px;
+	margin: 10px 0;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+p{
+	font-size:$base-font-size;
+	text-align: justify;
+	line-height: 1.2rem;
+	font-weight:300;
+}
+strong{
+	font-weight: 700;
+}
+
+a {
+	@include transition(color 0.3s);
+	text-decoration: none;
+	color: $white;
+	font-weight:400;
+	&:hover , a:focus, &.active{
+		@include transition(color 0.3s);
+		color:$link_color;
+		text-decoration: none;
+		font-weight: bold;
+	}
+}
+
+/**
+ *
+ * TRANSFORMS AND STYLES AND ALIGNS
+ *
+ **/
+
+.text-uppercase {
+	text-transform: uppercase !important;
+}
+
+.text-capitalized {
+	text-transform: capitalize !important;
+}
+
+.center-aligned {
+	text-align: center !important;
+}
+
+.left-aligned {
+	text-align: left !important;
+}
+
+.right-aligned {
+	text-align: right !important;
+}
+
+.rtl {
+	direction: rtl;
+}
+
+.ltr {
+	direction: ltr;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.no-margin {
+	margin: 0 !important;
+}
+
+.captalized {
+	text-transform: capitalize;
+}
+
+.uppercased {
+	text-transform: capitalize;
+}
+
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
+
+.clear-both{
+	clear:both;
+	height:10px;
+}
+.pointer{
+	cursor: pointer;
+}
+.o-hidden{
+	overflow:hidden;
+}
+
+
+/**/
+.container-fluid{
+	padding:0;
+}
+.container{
+    width:100%;
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto
+}
+/* @media (min-width:576px){
+    .container{
+        max-width:540px;
+    }
+}
+@media (min-width:768px){
+    .container{
+        max-width:720px;
+    }
+} */
+@media (min-width:414px){
+    .container{
+        max-width:375px;
+    }
+}
+ @media (min-width:576px){
+    .container{
+        max-width:540px;
+    }
+}
+@media (min-width:768px){
+    .container{
+        max-width:720px;
+    }
+}
+@media (min-width:824px){
+    .container{
+        max-width:780px;
+    }
+}
+@media (min-width:992px){
+    .container{
+        max-width:960px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        max-width:1140px;
+    }
+}
+@media (min-width:1366px){
+    .container{
+        max-width:1230px;
+    }
+}
+
+
+.sm-block{
+  display: block;
+}
+.md-block{
+  display: none;
+}
+
+@media screen and (min-width: 415px) and (max-width: 823px) {
+  .md-block{
+    display: block;
+  }
+  .sm-block{
+    display: none;
+  }
+}
+@media screen and (min-width: 824px){ 
+  .md-block ,.sm-block{
+    display: none;
+  }
+}

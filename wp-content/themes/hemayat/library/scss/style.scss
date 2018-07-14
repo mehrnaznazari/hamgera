@@ -1,0 +1,24 @@
+/******************************************************************
+Site Name: Medrick Studio 
+Author: Mehrnaz Nazari
+
+Stylesheet: Main Stylesheet
+
+******************************************************************/
+
+
+/*********************
+IMPORTING PARTIALS
+These files are needed at the beginning so that we establish all
+our mixins, functions, and variables that we'll be using across
+the whole project.
+*********************/
+@import "base/_reset";
+@import "base/_base";
+@import "base/_type";
+@import "base/_mixins";
+@import "base/_variables";
+@import "base/_fonts";
+
+@import "layout/_layout-home";
+

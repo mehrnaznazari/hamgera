@@ -1,0 +1,98 @@
+Easy WP SMTP debug log file
+
+CLIENT -> SERVER: EHLO localhost
+CLIENT -> SERVER: STARTTLS
+CLIENT -> SERVER: EHLO localhost
+CLIENT -> SERVER: AUTH CRAM-MD5
+CLIENT -> SERVER: aW5mb0BtZWRyaWNrZ2FtZXMuY29tIDEzZWEyZjk1N2FmNTA2MzBmNzliMjljM2Q3YjA0OTg2
+CLIENT -> SERVER: MAIL FROM:<info@medrickgames.com>
+CLIENT -> SERVER: RCPT TO:<info@medrickgames.com>
+CLIENT -> SERVER: DATA
+CLIENT -> SERVER: Date: Sun, 10 Jun 2018 14:48:31 +0000
+CLIENT -> SERVER: To: info@medrickgames.com
+CLIENT -> SERVER: From: final test <info@medrickgames.com>
+CLIENT -> SERVER: Reply-To: mehrnaz.nazari63@gmail.com
+CLIENT -> SERVER: Subject: Medrick "Contact Us"
+CLIENT -> SERVER: Message-ID: <4d8493667f61cfe0af3339a7e2432ad9@localhost>
+CLIENT -> SERVER: X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+CLIENT -> SERVER: MIME-Version: 1.0
+CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+CLIENT -> SERVER: 
+CLIENT -> SERVER: From: final test <mehrnaz.nazari63@gmail.com>
+CLIENT -> SERVER: Subject: Contact Us
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Message Body:
+CLIENT -> SERVER: final test
+CLIENT -> SERVER: 
+CLIENT -> SERVER: -- 
+CLIENT -> SERVER: This e-mail was sent from a contact form on Medrick (www.medrickgames.com)
+CLIENT -> SERVER: 
+CLIENT -> SERVER: .
+CLIENT -> SERVER: QUIT
+CLIENT -> SERVER: EHLO localhost
+CLIENT -> SERVER: STARTTLS
+CLIENT -> SERVER: EHLO localhost
+CLIENT -> SERVER: AUTH CRAM-MD5
+CLIENT -> SERVER: aW5mb0BtZWRyaWNrZ2FtZXMuY29tIDZjM2RiMDVmYTk2YTkwYTgzN2Q3YzI3OWViMDExNzNk
+CLIENT -> SERVER: MAIL FROM:<info@medrickgames.com>
+CLIENT -> SERVER: RCPT TO:<info@medrickgames.com>
+CLIENT -> SERVER: DATA
+CLIENT -> SERVER: Date: Sun, 10 Jun 2018 14:53:52 +0000
+CLIENT -> SERVER: To: info@medrickgames.com
+CLIENT -> SERVER: From: WordPress <info@medrickgames.com>
+CLIENT -> SERVER: Subject: [Medrick] New Admin Email Address
+CLIENT -> SERVER: Message-ID: <3a9eb53ea93b1773ddffe1d06c15d755@localhost>
+CLIENT -> SERVER: X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+CLIENT -> SERVER: MIME-Version: 1.0
+CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Howdy admin,
+CLIENT -> SERVER: 
+CLIENT -> SERVER: You recently requested to have the administration email address on
+CLIENT -> SERVER: your site changed.
+CLIENT -> SERVER: 
+CLIENT -> SERVER: If this is correct, please click on the following link to change it:
+CLIENT -> SERVER: http://localhost/medrick-website/src/wp-admin/options.php?adminhash=e12c78ae8c86050a8541055afa187fec
+CLIENT -> SERVER: 
+CLIENT -> SERVER: You can safely ignore and delete this email if you do not want to
+CLIENT -> SERVER: take this action.
+CLIENT -> SERVER: 
+CLIENT -> SERVER: This email has been sent to info@medrickgames.com
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Regards,
+CLIENT -> SERVER: All at Medrick
+CLIENT -> SERVER: http://localhost/medrick-website/src
+CLIENT -> SERVER: 
+CLIENT -> SERVER: .
+CLIENT -> SERVER: QUIT
+CLIENT -> SERVER: EHLO localhost
+CLIENT -> SERVER: STARTTLS
+CLIENT -> SERVER: EHLO localhost
+CLIENT -> SERVER: AUTH CRAM-MD5
+CLIENT -> SERVER: aW5mb0BtZWRyaWNrZ2FtZXMuY29tIDYwYWE4NGNhZTM4OTgxYjhkNTQ2Njc2ZThmYzMzYzY4
+CLIENT -> SERVER: MAIL FROM:<info@medrickgames.com>
+CLIENT -> SERVER: RCPT TO:<mehrnaz.nazari63@gmail.com>
+CLIENT -> SERVER: DATA
+CLIENT -> SERVER: Date: Sun, 10 Jun 2018 14:56:32 +0000
+CLIENT -> SERVER: To: mehrnaz.nazari63@gmail.com
+CLIENT -> SERVER: From: WordPress <info@medrickgames.com>
+CLIENT -> SERVER: Subject: [Medrick] Notice of Admin Email Change
+CLIENT -> SERVER: Message-ID: <632b65857dea01326365a8d798d48d50@localhost>
+CLIENT -> SERVER: X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+CLIENT -> SERVER: MIME-Version: 1.0
+CLIENT -> SERVER: Content-Type: text/plain; charset=UTF-8
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Hi,
+CLIENT -> SERVER: 
+CLIENT -> SERVER: This notice confirms that the admin email address was changed on Medrick.
+CLIENT -> SERVER: 
+CLIENT -> SERVER: The new admin email address is info@medrickgames.com.
+CLIENT -> SERVER: 
+CLIENT -> SERVER: This email has been sent to mehrnaz.nazari63@gmail.com
+CLIENT -> SERVER: 
+CLIENT -> SERVER: Regards,
+CLIENT -> SERVER: All at Medrick
+CLIENT -> SERVER: http://localhost/medrick-website/src
+CLIENT -> SERVER: 
+CLIENT -> SERVER: .
+CLIENT -> SERVER: QUIT
