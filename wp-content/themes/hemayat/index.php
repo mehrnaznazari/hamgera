@@ -45,10 +45,28 @@ Template Name: Home
             </div>
         </section>
 
-         <section class="about" data-section-name="">
-             <div class="inner-content container">
-                <p> همگرا بودن یا نبودن</p>
-             </div>
+         <section class="about" data-section-name="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 btn-about">
+                        <a href="#"><span>می‌خواهم بیشتر بدانم</span></a>
+                    </div>
+                    <div class="col-md-6 btn-about">
+                        <a href="#"><span>می‌خواهم با حامی همکاری کنم</span></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <span class="who-is-us"></span>
+                        <h1>ما کیستیم</h1>
+                    </div>
+                    <div class="col-md-12">
+                        <p>ساختار حمایتی همگرا در سال 1396 متولد شد تا حمایت‌های بنیاد ملی بازی‌های رایانه‌ای در حوزه‌های مختلف صنعت بازی را همگرا کند! ما در همگرا با تجربه‌ای طولانی، شما را در مسیر موفقیت همراهی کرده و آنچه را برای رشد احتیاج دارید، در اختیارتان قرار می‌دهیم. </p>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br>
          </section>
 
     </main>

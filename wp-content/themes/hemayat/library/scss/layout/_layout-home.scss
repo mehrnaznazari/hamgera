@@ -21,8 +21,8 @@ header{
     margin:55px 0 44px 0;
     .nav-menu{
       li{
-        background-color: $gray-light;
-        margin-left:24px;
+        background-color: #ebebeb;
+        margin-left:23px;
         float: right;
         a{
           @include size(118px, 24px);
@@ -49,6 +49,9 @@ header{
             }
           }
         }
+        &:last-child{
+          margin-left: 0;
+        }
       }
     }
   }
@@ -59,7 +62,6 @@ header{
   .container{
     padding:0;
   }
-
   .owl-carousel{
     &.main_slider{
       .owl-nav{
@@ -90,3 +92,54 @@ header{
   }
 }
 
+.about{
+  .container{
+    padding: 50px 55px 80px 55px;
+  }
+  .btn-about{
+    text-align: center;
+    a{
+      @include sprite(-394px,-1px); 
+      @include size(395px,95px);
+      display: inline-block;
+      span{
+        @include transition(all 0.3s);
+        color: $base-color;
+        text-align: center;
+        line-height: 6rem;
+        font-weight: 800;
+        font-size:28px;
+        display: block;
+      }
+      &:hover,&.active{
+        @include sprite(0px,-1px);
+        span{
+          color: $white;
+        }
+      }
+    }
+    &:last-child {
+      padding-left: 45px;
+    }
+    &:first-child {
+      padding-right: 45px;
+    }
+  }
+  .col-md-4{
+    padding: 0;
+  }
+  .who-is-us{
+    @include sprite(-346px,-388px);
+    @include size(194px,187px);
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+  }
+  h1{
+    margin-bottom: 30px;
+    font-weight: 800;
+  }
+  p{
+    text-align: center;
+  }
+}
