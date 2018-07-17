@@ -331,7 +331,7 @@ h6 {
 
 /* line 45, ../scss/base/_type.scss */
 h1 {
-  font-size: 90px;
+  font-size: 82px;
   margin: 14px 0;
 }
 
@@ -797,9 +797,113 @@ header .navigation .nav-menu li:last-child {
 /* line 138, ../scss/layout/_layout-home.scss */
 .about h1 {
   margin-bottom: 30px;
-  font-weight: 800;
+  font-weight: 700;
 }
 /* line 142, ../scss/layout/_layout-home.scss */
 .about p {
   text-align: center;
+}
+/* line 145, ../scss/layout/_layout-home.scss */
+.about .about-targets {
+  background-color: #e0e1e2;
+}
+/* line 147, ../scss/layout/_layout-home.scss */
+.about .about-targets .container {
+  background-color: #f1f2f2;
+  padding: 0;
+}
+/* line 150, ../scss/layout/_layout-home.scss */
+.about .about-targets .container .col-md-6 {
+  padding-bottom: 60px;
+  padding-top: 35px;
+}
+/* line 153, ../scss/layout/_layout-home.scss */
+.about .about-targets .container .col-md-6.col-r {
+  padding-right: 55px;
+  padding-left: 45px;
+}
+/* line 157, ../scss/layout/_layout-home.scss */
+.about .about-targets .container .col-md-6.col-l {
+  padding-right: 45px;
+  padding-left: 55px;
+}
+/* line 161, ../scss/layout/_layout-home.scss */
+.about .about-targets .container .col-md-6 .bg-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* line 164, ../scss/layout/_layout-home.scss */
+.about .about-targets .container .col-md-6 .bg-title h2 {
+  line-height: 9.5rem;
+  text-align: center;
+  font-weight: 800;
+  color: #ed165a;
+}
+/* line 170, ../scss/layout/_layout-home.scss */
+.about .about-targets .container .col-md-6 .bg-title .mission {
+  background-image: url("../images/main_sprite.png");
+  background-repeat: no-repeat;
+  background-position: -2px -388px;
+  background-color: transparent;
+  width: 145px;
+  height: 168px;
+  display: inline-block;
+}
+/* line 175, ../scss/layout/_layout-home.scss */
+.about .about-targets .container .col-md-6 .bg-title .vision {
+  background-image: url("../images/main_sprite.png");
+  background-repeat: no-repeat;
+  background-position: -149px -388px;
+  background-color: transparent;
+  width: 195px;
+  height: 169px;
+  display: inline-block;
+}
+/* line 181, ../scss/layout/_layout-home.scss */
+.about .about-targets .container .col-md-6 strong {
+  line-height: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  display: block;
+}
+/* line 188, ../scss/layout/_layout-home.scss */
+.about .about-targets .container .col-md-6 p {
+  line-height: 2.1rem;
+  font-size: 25px;
+}
+/* line 198, ../scss/layout/_layout-home.scss */
+.about .video-aboutus {
+  padding: 40px 0;
+}
+/* line 200, ../scss/layout/_layout-home.scss */
+.about .video-aboutus .container {
+  padding: 0;
+}
+
+/* line 206, ../scss/layout/_layout-home.scss */
+.services {
+  background-color: #22bd91;
+}
+/* line 208, ../scss/layout/_layout-home.scss */
+.services .container {
+  background-color: #5cf192;
+  padding: 70px 60px;
+}
+/* line 212, ../scss/layout/_layout-home.scss */
+.services .container .icon-service {
+  background-image: url("../images/main_sprite.png");
+  background-repeat: no-repeat;
+  background-position: -542px -388px;
+  background-color: transparent;
+  width: 185px;
+  height: 107px;
+  margin: 15px auto;
+}
+/* line 217, ../scss/layout/_layout-home.scss */
+.services .container h2 {
+  margin-bottom: 65px;
+  text-align: center;
+  font-weight: 800;
+  color: #ed165a;
 }

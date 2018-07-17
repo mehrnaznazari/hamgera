@@ -45,7 +45,7 @@ Template Name: Home
             </div>
         </section>
 
-         <section class="about" data-section-name="about">
+        <section class="about" data-section-name="about">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 btn-about">
@@ -66,9 +66,50 @@ Template Name: Home
                 </div>
             </div>
 
-            <br><br><br><br>
-         </section>
+            <div class="about-targets">
+                <div class="container">
+                    <div class="col-md-6 col-r">
+                        <div class="bg-title">
+                            <div class="mission">
+                                <h2>هـــدف <h2>
+                            </div>
+                        </div>
+                        <div>
+                            <strong>در همگرا چه هدفی داریم؟ </strong>
+                            <p>هدف اصلی، همگرا کردن حمایت‌هایی است که در بنیاد ملی بازی‎‌های رایانه‌ای به بازیسازان ارائه می‌کنیم تا با متنوع‌ترین خدمات، صنعت بازی ایران را توانمند کنیم.</p>
+                        </div>
 
+                    </div>
+                    <div class="col-md-6 col-l">
+                        <div class="bg-title">
+                            <div class="vision">
+                                <h2>چشم‌انداز</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <strong>چه چشم‌اندازی را دنبال می‌کنیم؟</strong>
+                            <p>شفاف‌سازی حمایت‌های بنیاد ملی بازی‌های رایانه‌ای، ارتقاء تعالی شرکت‌ها/ تیم‌ها و تحول ساختاری صنعت بازی ایران از طریق ارائه‌ی متنوع‌ترین، بهترین و سریع‌ترین خدمات حمایتی </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-aboutus">
+                <div class="container">
+                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/video.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="services" data-section-name="services">
+            <div class="container">
+                <div class="icon-service"></div>
+                <h2>در همگرا برای تمام نیازهای تان راه حلی داریم !</h2>
+            </div>
+        </section>
+
+
+            <br><br><br><br>
     </main>
 
 
