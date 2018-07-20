@@ -45,7 +45,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section class="about" data-section-name="about">
+        <section class="section about" data-section-name="about">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 btn-about">
@@ -101,11 +101,103 @@ Template Name: Home
             </div>
         </section>
 
-        <section class="services" data-section-name="services">
+        <section class="section services" data-section-name="services">
             <div class="container">
                 <div class="icon-service"></div>
                 <h2>در همگرا برای تمام نیازهای تان راه حلی داریم !</h2>
+
+                <div class="row our-supports">
+                    <div class="col-md-3">
+                        <div class="support-details">
+                            <strong>به تجهیزات، امکانات و محل استقرار نیاز دارید؟ </strong>
+                            <p>کمبود امکانات و نداشتن تجهیزات به روز، رسیدن به اهداف را سخت و یا حتی غیرممکن میسازد. تخفیف مناسب برای خدمات زیرساختی (مانند سرور، صداگذاری، رندرینگ، موشن کپچر و ...)، وام حمایتی برای تهیه محل استقرار، خرید تجهیزات سختافزاری/ نرمافزاری و لایسنس‌های مورد نیاز، در کنار ما ممکن خواهد شد.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="hegsa">
+                                    به جذب تسهیلات مالی و سرمایه گذاری نیاز دارید؟
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="hegsa">
+                                    به تجهیزات، امکانات و محل استقرار نیاز دارید؟
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="hegsa">
+                                    به تجهیزات، امکانات و محل استقرار نیاز دارید؟
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="hegsa">
+                                    به تجهیزات، امکانات و محل استقرار نیاز دارید؟
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="hegsa">
+                                    به تجهیزات، امکانات و محل استقرار نیاز دارید؟
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="hegsa">
+                                    به تجهیزات، امکانات و محل استقرار نیاز دارید؟
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="hegsa">
+                                    به تجهیزات، امکانات و محل استقرار نیاز دارید؟
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+
+         <section class="section our-advantages" data-section-name="advantages">
+            <!-- <div class="container"> -->
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-advantages">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="container panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="arrow"></span>
+                                چرا بهترین حامی صنعت بازی هستیم؟ </a>
+                          </h4>
+                        </div>
+
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="container panel-body">
+                            <ul>
+                                <li><strong>کیفیت:</strong>
+                                    <span>با ما همگرا شوید تا به شما خدمات باکیفیت ارائه دهیم. هدف‌مان این است که راه رشد شما را کوتاه‌تر و هموارتر کنیم!</span>
+                                </li>
+                                <li><strong>حمایت بدون بازپرداخت :</strong>
+                                    <span>بخش قابل توجهی از حمایت‌های ما بدون بازپرداخت است. رشد شما در پایان سالِ حمایتی‌تان برای ما حکم بازپرداخت را خواهد داشت. </span>
+                                </li>
+                                <li><strong>جامعیت:</strong>
+                                    <span>تیم ما از بطن صنعت گیم متولد شده است. ما عمیقا نیازها و دغدغه‌های بازیسازان را لمس کرد‌ه‌ایم. همچنین، با ملاقات‌های مداوم با بازیسازان، نیازسنجی کاملی از دغدغه‌های فعالان صنعت بازی در ایران تهیه کرده‌ و برای رفع هرکدام حمایت‌هایی درنظر گرفته‌ایم. </span>
+                                </li>
+                                <li><strong>پشتیبانی: </strong>
+                                    <span>دبیرخانه همگرا، از تیمی متمرکز، فعال، متخصص و مشتاق تشکیل شده که آماده‌ی همراهی با شما و پاسخگویی به سوالات‌تان است. شما در تعامل با این تیم با تجربه‌ی جدیدی از همراهی روبه‌رو خواهید شد. </span>
+                                </li>
+                                <li><strong>امنیت: </strong>
+                                    <span>همگرا زیرمجموعه‌ی متولی صنعت بازی، بنیاد ملی بازی‌های رایانه‌ای، است، با ما اطلاعات ثبت‌نام و حقوقی شما ایمن خواهد بود.</span>
+                                </li>
+
+                            </ul>
+
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
         </section>
 
 

@@ -36,16 +36,16 @@ header{
         &:hover{
           a{
             span{
-              color: $red;
+              color: $red-bg;
             }
           }
         }
         &:focus ,&.active{
           background-color: $bg-color;
-          border:1.5px solid $red;
+          border:1.5px solid $red-bg;
           a{
             span{
-              color: $red;
+              color: $red-bg;
             }
           }
         }
@@ -165,7 +165,7 @@ header{
             line-height: 9.5rem;
             text-align: center;
             font-weight: 800;
-            color:$red;
+            color:$red-color;
           }
           .mission{
             @include sprite(-2px,-388px);
@@ -218,7 +218,156 @@ header{
       margin-bottom: 65px;
       text-align: center;
       font-weight: 800;
-      color: $red;
+      color: $red-color;
+    }
+
+    .our-supports{
+      position: relative;
+      .col-md-3{
+        strong{
+          text-align: center;
+          line-height:1.5rem;
+          font-weight: 800;
+          font-size: 19px;
+          color:$red-color;
+          display: block;
+          padding-top: 25px;
+          margin: 0 4px;
+        }
+        p{
+          padding: 30px 0px 10px 0px;
+          margin: 0 4px;
+          line-height:1.6rem;
+          text-align: center;
+          color: $link_color;
+          font-weight: 600;
+          font-size: 15px;
+        }
+      }
+      &:before ,&:after{
+        content: ' ';
+        border-right:98px solid $green-light;
+        border-left:98px solid $green-light;
+        display:inline-block;
+        position: absolute;
+        right: 15px;        
+      }
+      &:before{
+        border-bottom:57px solid $bg-color;
+        //content: url(../images/14.png);
+        top: 0px;
+      }
+      &:after{
+        border-top:57px solid $bg-color;
+        top:415px;
+      }
+
+      .support-details{
+        @include size(196px, 415px);
+        background-color: $bg-color;
+        margin-top: 57px;
+      }
+
+      .col-md-9{
+        padding: 0 25px 0 30px;
+      }
+      .col-md-6{
+        padding: 0 10px 0 20px;
+        height:186px;
+        &:nth-child(odd){
+          img , .hegsa{
+            margin-left: 55px;
+            float: left;
+          }
+        }
+      }
+      .col-md-4{
+        margin-bottom: -15px;
+        margin-top: -15px;
+        height: 186px;
+      }
+      .hegsa{
+        background: url('../images/hegsa.png') no-repeat center center;
+        @include transition(all 0.3s);
+        @include size(161px,186px);
+        display:block;
+        color: $base-color;
+        padding-top: 73px;
+        text-align: center;
+        line-height: 1.4rem;
+        font-weight: 800;
+        font-size: 16px;
+        cursor: pointer;
+        &:hover ,&.active{
+          color:$red-color;
+        }
+
+      }
+    }
+  }
+}
+
+.our-advantages{
+  .panel-advantages{
+    background-color: $gray-dark;
+    border-radius:0;
+    border:none;
+    .panel-heading{
+      background-color: $navy-blue;
+      color: $base-color;
+      border-bottom: none;
+      bordar-radius:0;
+      padding: 0;
+    }
+    .panel-title{
+      background-color:$red-bg;
+      text-align: center;
+      position: relative;
+      a{
+        font-weight: 800;
+        font-size: 33px;
+        display: block;
+        padding: 32px;
+        &:hover , &:focus{
+          text-decoration:none;
+          color:$base-color;
+        }
+        .arrow{
+          @include transition(all 0.3s);
+          @include sprite(-204px,-558px);
+          @include size(44px, 37px);
+          display: inline-block;
+          position: absolute;
+          right: 55px;
+        }
+        &.collapsed{
+          .arrow{
+            @include transform(rotate(180deg));
+          }
+        }
+        
+      }
+    }
+    .panel-body{
+      background-color: $gray-light;
+      padding: 55px 55px 25px;
+      border:none;
+
+      ul{
+        padding-right: 20px;
+        li{
+          list-style-type: square;
+          text-indent: -5px;
+          margin-bottom: 34px;
+          line-height:2.4rem;
+          font-weight: 500;
+          font-size: 28px;
+          color: $red-color;
+          strong{
+            font-weight: 800;
+          }
+        }
+      }
     }
   }
 }

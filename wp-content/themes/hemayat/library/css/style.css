@@ -837,7 +837,7 @@ header .navigation .nav-menu li:last-child {
   line-height: 9.5rem;
   text-align: center;
   font-weight: 800;
-  color: #ed165a;
+  color: #ee175a;
 }
 /* line 170, ../scss/layout/_layout-home.scss */
 .about .about-targets .container .col-md-6 .bg-title .mission {
@@ -905,5 +905,181 @@ header .navigation .nav-menu li:last-child {
   margin-bottom: 65px;
   text-align: center;
   font-weight: 800;
-  color: #ed165a;
+  color: #ee175a;
+}
+/* line 224, ../scss/layout/_layout-home.scss */
+.services .container .our-supports {
+  position: relative;
+}
+/* line 227, ../scss/layout/_layout-home.scss */
+.services .container .our-supports .col-md-3 strong {
+  text-align: center;
+  line-height: 1.5rem;
+  font-weight: 800;
+  font-size: 19px;
+  color: #ee175a;
+  display: block;
+  padding-top: 25px;
+  margin: 0 4px;
+}
+/* line 237, ../scss/layout/_layout-home.scss */
+.services .container .our-supports .col-md-3 p {
+  padding: 30px 0px 10px 0px;
+  margin: 0 4px;
+  line-height: 1.6rem;
+  text-align: center;
+  color: #5cf192;
+  font-weight: 600;
+  font-size: 15px;
+}
+/* line 247, ../scss/layout/_layout-home.scss */
+.services .container .our-supports:before, .services .container .our-supports:after {
+  content: ' ';
+  border-right: 98px solid #5cf192;
+  border-left: 98px solid #5cf192;
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+}
+/* line 255, ../scss/layout/_layout-home.scss */
+.services .container .our-supports:before {
+  border-bottom: 57px solid #240d35;
+  top: 0px;
+}
+/* line 260, ../scss/layout/_layout-home.scss */
+.services .container .our-supports:after {
+  border-top: 57px solid #240d35;
+  top: 415px;
+}
+/* line 265, ../scss/layout/_layout-home.scss */
+.services .container .our-supports .support-details {
+  width: 196px;
+  height: 415px;
+  background-color: #240d35;
+  margin-top: 57px;
+}
+/* line 271, ../scss/layout/_layout-home.scss */
+.services .container .our-supports .col-md-9 {
+  padding: 0 25px 0 30px;
+}
+/* line 274, ../scss/layout/_layout-home.scss */
+.services .container .our-supports .col-md-6 {
+  padding: 0 10px 0 20px;
+  height: 186px;
+}
+/* line 278, ../scss/layout/_layout-home.scss */
+.services .container .our-supports .col-md-6:nth-child(odd) img, .services .container .our-supports .col-md-6:nth-child(odd) .hegsa {
+  margin-left: 55px;
+  float: left;
+}
+/* line 284, ../scss/layout/_layout-home.scss */
+.services .container .our-supports .col-md-4 {
+  margin-bottom: -15px;
+  margin-top: -15px;
+  height: 186px;
+}
+/* line 289, ../scss/layout/_layout-home.scss */
+.services .container .our-supports .hegsa {
+  background: url("../images/hegsa.png") no-repeat center center;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 161px;
+  height: 186px;
+  display: block;
+  color: #240d35;
+  padding-top: 73px;
+  text-align: center;
+  line-height: 1.4rem;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* line 301, ../scss/layout/_layout-home.scss */
+.services .container .our-supports .hegsa:hover, .services .container .our-supports .hegsa.active {
+  color: #ee175a;
+}
+
+/* line 311, ../scss/layout/_layout-home.scss */
+.our-advantages .panel-advantages {
+  background-color: #e0e1e2;
+  border-radius: 0;
+  border: none;
+}
+/* line 315, ../scss/layout/_layout-home.scss */
+.our-advantages .panel-advantages .panel-heading {
+  background-color: #240d35;
+  color: #240d35;
+  border-bottom: none;
+  bordar-radius: 0;
+  padding: 0;
+}
+/* line 322, ../scss/layout/_layout-home.scss */
+.our-advantages .panel-advantages .panel-title {
+  background-color: #ed165a;
+  text-align: center;
+  position: relative;
+}
+/* line 326, ../scss/layout/_layout-home.scss */
+.our-advantages .panel-advantages .panel-title a {
+  font-weight: 800;
+  font-size: 33px;
+  display: block;
+  padding: 32px;
+}
+/* line 331, ../scss/layout/_layout-home.scss */
+.our-advantages .panel-advantages .panel-title a:hover, .our-advantages .panel-advantages .panel-title a:focus {
+  text-decoration: none;
+  color: #240d35;
+}
+/* line 335, ../scss/layout/_layout-home.scss */
+.our-advantages .panel-advantages .panel-title a .arrow {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  background-image: url("../images/main_sprite.png");
+  background-repeat: no-repeat;
+  background-position: -204px -558px;
+  background-color: transparent;
+  width: 44px;
+  height: 37px;
+  display: inline-block;
+  position: absolute;
+  right: 55px;
+}
+/* line 344, ../scss/layout/_layout-home.scss */
+.our-advantages .panel-advantages .panel-title a.collapsed .arrow {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 351, ../scss/layout/_layout-home.scss */
+.our-advantages .panel-advantages .panel-body {
+  background-color: #f1f2f2;
+  padding: 55px 55px 25px;
+  border: none;
+}
+/* line 356, ../scss/layout/_layout-home.scss */
+.our-advantages .panel-advantages .panel-body ul {
+  padding-right: 20px;
+}
+/* line 358, ../scss/layout/_layout-home.scss */
+.our-advantages .panel-advantages .panel-body ul li {
+  list-style-type: square;
+  text-indent: -5px;
+  margin-bottom: 34px;
+  line-height: 2.4rem;
+  font-weight: 500;
+  font-size: 28px;
+  color: #ee175a;
+}
+/* line 366, ../scss/layout/_layout-home.scss */
+.our-advantages .panel-advantages .panel-body ul li strong {
+  font-weight: 800;
 }

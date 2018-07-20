@@ -10,8 +10,8 @@ jQuery(document).ready(function($){
   check_device();
 
 
-   $.scrollify({
-      section:".panel",
+  /* $.scrollify({
+      section:".section",
       interstitialSection : "",
       scrollbars:true,
       easing: "swing",
@@ -44,7 +44,7 @@ jQuery(document).ready(function($){
         var current = $.scrollify.current().attr('data-section-name');
         $.scrollify.move('#'+current);
       }
-    });
+    });*/
    
 
   if ($('body').hasClass('home')) {
