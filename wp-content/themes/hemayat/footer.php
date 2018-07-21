@@ -32,6 +32,10 @@
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/library/css/owl.theme.default.css"/>
         <script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.scrollify.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/library/js/owl.carousel.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/library/css/jquery.mCustomScrollbar.css"/>
+        <script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.mCustomScrollbar.concat.min.js"></script>
+        
     	<script src="<?php echo get_template_directory_uri(); ?>/library/js/app.js"></script>
 
 

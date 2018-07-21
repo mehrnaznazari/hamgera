@@ -61,6 +61,41 @@ jQuery(document).ready(function($){
       })
       
     /********** End Main slider **********/
+
+    /********** partners slider **********/
+      var owlp = $('.owl-carousel.partner-slider');
+      owlp.owlCarousel({
+          loop:false,
+          nav:true,
+          dots:false,
+          navText:'',
+          rtl:true,
+          margin:12,
+          //items:6,
+          responsive:{
+              0:{
+                  items:2
+              },
+              600:{
+                  items:3
+              },
+              800:{
+                  items:4
+              },
+              1200:{
+                  items:6
+              }
+          }
+      })
+      
+    /********** End partners slider **********/
+
+    /********** Scrollbar in faq tabs **********/
+      $(".tab-pane ul").mCustomScrollbar({
+         theme: "light-thin",
+          mouseWheel: true 
+      });
+  /********** End Scrollbar in in faq tabs **********/
   }
 
 
