@@ -97,7 +97,7 @@ jQuery(document).ready(function($){
       });
   /********** End Scrollbar in in faq tabs **********/
 
-  /********** partners slider **********/
+  /********** recommendation slider **********/
       var owlr = $('.owl-carousel.recom-slider');
       owlr.owlCarousel({
           loop:false,
@@ -107,7 +107,35 @@ jQuery(document).ready(function($){
           rtl:true,
           items:1
       })
+  /********** End recommendation slider **********/
+
+  /********** partners slider **********/
+      var owlm = $('.owl-carousel.media-slider');
+      owlm.owlCarousel({
+          loop:false,
+          nav:true,
+          dots:false,
+          navText:'',
+          rtl:true,
+          margin:76,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:2
+              },
+              800:{
+                  items:3
+              },
+              1200:{
+                  items:3
+              }
+          }
+      })
+      
   /********** End partners slider **********/
+
   }
 
 /****************************************************************************************************/

@@ -77,12 +77,12 @@ header{
         margin: 0;
       }
       .owl-prev{
-        @include sprite(-82px,-558px);
-        left: -48px;
-      }
-      .owl-next{
         @include sprite(-121px,-558px);
         right: -48px;
+      }
+      .owl-next{
+        @include sprite(-82px,-558px);
+        left: -48px;
       }
     }
   }
@@ -663,25 +663,133 @@ header{
       right: 45%;
       left: 45%;
     }
-  }
-  h2{
-    text-align: center;
-    font-weight: 800;
-    font-size: 55px;
-    margin: 62px 0 0;
-    height: 122px;
+    h2{
+      text-align: center;
+      font-weight: 800;
+      font-size: 55px;
+      margin: 62px 0 0;
+      height: 122px;
+    }
   }
   .recommendations{
     background-color: $gray-dark;
-    height: 249px;
+    height: 245px;
     .container{
-      background-color: $gray-light;
+    //  background-color: $gray-light;
     }
     .recom-slider{
-      img{
-        width: auto;
+      position: relative;
+      top: -74px;
+      .slide {
+        position: relative;
+        height: 319px;
+        top: -76px;
+        img{
+          position: relative;
+          right: 52px;
+          top: 76px;
+          width: 130px;
+        }
+        .text-slide {
+          padding: 95px 52px 25px 52px;
+          background-color: $gray-light;
+          p{
+            font-size: 29px;
+            font-weight: 500;
+          }
+          span{
+            color: $red-color;
+            text-align: left;
+            display: block;
+            font-size: 29px;
+            font-weight: 700;
+            margin-top: 15px;
+          }
+        }
       }
-      padding: 0 55px;
+      &.owl-carousel.owl-theme{
+        .owl-nav{
+          top: 57%;
+        }
+      }
+    }
+  }
+
+  .middle-row{
+    padding: 45px 0;
+    text-align: center;
+    position: relative;
+    .icon-bg{
+      @include sprite(-130px,-602px);
+      @include size(133px,114px);
+      display: inline-block;
+      position: absolute;
+      z-index: -1;      
+      right: 45%;
+      left: 45%;
+    }
+    h2{
+      text-align: center;
+      font-weight: 800;
+      font-size: 55px;
+      margin: 45px 0 0;
+      height: 70px;
+    }
+  }
+
+  .in-media{
+    background-color: $red-3;
+    .container{
+      background-color: $red-color;
+
+      .media-slider{
+        padding: 38px 52px 27px 52px;
+        img{
+          margin-bottom: 15px;
+        }
+        p{
+          font-size: 19px;
+          font-weight: 300;
+          line-height:1.5rem;
+        }
+        a{
+          color: $link_color;
+          text-align:left;
+          margin-top: 8px;
+          font-weight: 700;
+          font-size: 22px;
+          display: block;
+        }
+
+      &.owl-carousel{
+          &.owl-theme{
+            .owl-prev{
+              @include sprite(-41px,-558px);
+            }
+            .owl-next{
+              @include sprite(-2px,-558px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+footer{
+  background-color:$navy-blue;
+  padding: 65px 0 70px 0;
+  p{
+    color: $gray-light;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height:1.2rem;
+    font-weight: 300;
+    font-size: 16px;
+    a{
+      font-weight: 300;
+      font-size: 16px;
     }
   }
 }

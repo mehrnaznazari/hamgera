@@ -431,7 +431,7 @@ Template Name: Home
             </div>
         </section>
 
-         <section class="section media" data-section-name="media">
+        <section class="section media" data-section-name="media">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 top-row">
@@ -440,6 +440,7 @@ Template Name: Home
                     </div>
                 </div>
             </div>
+            
             <div class="recommendations">
                 <div class="container">
                     <div class="owl-carousel owl-theme recom-slider">
@@ -451,29 +452,68 @@ Template Name: Home
                            <?php $meta ?> -->
                             <div class="slide">
                                 <img src="<?php echo get_template_directory_uri(); ?>/library/images/testimonial.png" alt="">
-                                <p> می‌توانیم به تمامی مخاطبانی که در سرویس ما ثبت‌نام کرده‌اند خدمات باکیفیت ارائه دهیم. هدف‌مان این است که راه رشد شما را کوتاه‌تر و هموارتر کنیم!</p>
-                                <span>انوشه نوروزی</span>
+                                <div class="text-slide">
+                                    <p> می‌توانیم به تمامی مخاطبانی که در سرویس ما ثبت‌نام کرده‌اند خدمات باکیفیت ارائه دهیم. هدف‌مان این است که راه رشد شما را کوتاه‌تر و هموارتر کنیم!</p>
+                                    <span>انوشه نوروزی</span>
+                                </div>
                             </div>
                             <div class="slide">
                                 <img src="<?php echo get_template_directory_uri(); ?>/library/images/testimonial.png" alt="">
-                                <p> می‌توانیم به تمامی مخاطبانی که در سرویس ما ثبت‌نام کرده‌اند خدمات باکیفیت ارائه دهیم. هدف‌مان این است که راه رشد شما را کوتاه‌تر و هموارتر کنیم!</p>
-                                <span>انوشه نوروزی</span>
+                                <div class="text-slide">
+                                    <p> می‌توانیم به تمامی مخاطبانی که در سرویس ما ثبت‌نام کرده‌اند خدمات باکیفیت ارائه دهیم. هدف‌مان این است که راه رشد شما را کوتاه‌تر و هموارتر کنیم!</p>
+                                    <span>انوشه نوروزی</span>
+                                </div>
                             </div>
                             <div class="slide">
                                 <img src="<?php echo get_template_directory_uri(); ?>/library/images/testimonial.png" alt="">
-                                <p> می‌توانیم به تمامی مخاطبانی که در سرویس ما ثبت‌نام کرده‌اند خدمات باکیفیت ارائه دهیم. هدف‌مان این است که راه رشد شما را کوتاه‌تر و هموارتر کنیم!</p>
-                                <span>انوشه نوروزی</span>
+                                <div class="text-slide">
+                                    <p> می‌توانیم به تمامی مخاطبانی که در سرویس ما ثبت‌نام کرده‌اند خدمات باکیفیت ارائه دهیم. هدف‌مان این است که راه رشد شما را کوتاه‌تر و هموارتر کنیم!</p>
+                                    <span>انوشه نوروزی</span>
+                                </div>
                             </div>
 
                         <!-- <?php } ?> -->
                     </div>
                 </div>
             </div>
-         </section>
 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 middle-row">
+                        <span class="icon-bg"></span>
+                        <h2> رسانه ها در باره ما چه می گویند</h2>
+                    </div>
+                </div>
+            </div>
 
+            <div class="in-media">
+                <div class="container">
+                    <div class="owl-carousel owl-theme media-slider">
+                        <div class="slide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/media-1.jpg" alt="">
+                            <p>سامانه همگرا برای نخستین بار در بخش نمایشگاهی TGC معرفی شد</p>
+                            <a href="#">+ادامه مطلب</a>
+                        </div>
+                        <div class="slide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/media-1.jpg" alt="">
+                            <p>سامانه همگرا برای نخستین بار در بخش نمایشگاهی TGC معرفی شد</p>
+                            <a href="#">+ادامه مطلب</a>
+                        </div>
+                        <div class="slide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/media-1.jpg" alt="">
+                            <p>سامانه همگرا برای نخستین بار در بخش نمایشگاهی TGC معرفی شد</p>
+                            <a href="#">+ادامه مطلب</a>
+                        </div>
+                        <div class="slide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/media-1.jpg" alt="">
+                            <p>سامانه همگرا برای نخستین بار در بخش نمایشگاهی TGC معرفی شد</p>
+                            <a href="#">+ادامه مطلب</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <br><br><br><br>
+        </section>
     </main>
 
 

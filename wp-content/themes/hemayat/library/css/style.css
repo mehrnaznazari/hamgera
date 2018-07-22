@@ -388,7 +388,7 @@ a {
   font-weight: 400;
 }
 /* line 88, ../scss/base/_type.scss */
-a:hover, a a:focus, a.active {
+a:hover, a:focus, a.active {
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
   -ms-transition: color 0.3s;
@@ -708,17 +708,17 @@ header .navigation .nav-menu li:last-child {
 .owl-carousel.owl-theme .owl-nav .owl-prev {
   background-image: url("../images/main_sprite.png");
   background-repeat: no-repeat;
-  background-position: -82px -558px;
+  background-position: -121px -558px;
   background-color: transparent;
-  left: -48px;
+  right: -48px;
 }
 /* line 83, ../scss/layout/_layout-home.scss */
 .owl-carousel.owl-theme .owl-nav .owl-next {
   background-image: url("../images/main_sprite.png");
   background-repeat: no-repeat;
-  background-position: -121px -558px;
+  background-position: -82px -558px;
   background-color: transparent;
-  right: -48px;
+  left: -48px;
 }
 
 /* line 91, ../scss/layout/_layout-home.scss */
@@ -1442,8 +1442,8 @@ header .navigation .nav-menu li:last-child {
   right: 45%;
   left: 45%;
 }
-/* line 667, ../scss/layout/_layout-home.scss */
-.media h2 {
+/* line 666, ../scss/layout/_layout-home.scss */
+.media .top-row h2 {
   text-align: center;
   font-weight: 800;
   font-size: 55px;
@@ -1453,17 +1453,139 @@ header .navigation .nav-menu li:last-child {
 /* line 674, ../scss/layout/_layout-home.scss */
 .media .recommendations {
   background-color: #e0e1e2;
-  height: 249px;
-}
-/* line 677, ../scss/layout/_layout-home.scss */
-.media .recommendations .container {
-  background-color: #f1f2f2;
+  height: 245px;
 }
 /* line 680, ../scss/layout/_layout-home.scss */
 .media .recommendations .recom-slider {
-  padding: 0 55px;
+  position: relative;
+  top: -74px;
 }
-/* line 681, ../scss/layout/_layout-home.scss */
-.media .recommendations .recom-slider img {
-  width: auto;
+/* line 683, ../scss/layout/_layout-home.scss */
+.media .recommendations .recom-slider .slide {
+  position: relative;
+  height: 319px;
+  top: -76px;
+}
+/* line 687, ../scss/layout/_layout-home.scss */
+.media .recommendations .recom-slider .slide img {
+  position: relative;
+  right: 52px;
+  top: 76px;
+  width: 130px;
+}
+/* line 693, ../scss/layout/_layout-home.scss */
+.media .recommendations .recom-slider .slide .text-slide {
+  padding: 95px 52px 25px 52px;
+  background-color: #f1f2f2;
+}
+/* line 696, ../scss/layout/_layout-home.scss */
+.media .recommendations .recom-slider .slide .text-slide p {
+  font-size: 29px;
+  font-weight: 500;
+}
+/* line 700, ../scss/layout/_layout-home.scss */
+.media .recommendations .recom-slider .slide .text-slide span {
+  color: #ee175a;
+  text-align: left;
+  display: block;
+  font-size: 29px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+/* line 711, ../scss/layout/_layout-home.scss */
+.media .recommendations .recom-slider.owl-carousel.owl-theme .owl-nav {
+  top: 57%;
+}
+/* line 718, ../scss/layout/_layout-home.scss */
+.media .middle-row {
+  padding: 45px 0;
+  text-align: center;
+  position: relative;
+}
+/* line 722, ../scss/layout/_layout-home.scss */
+.media .middle-row .icon-bg {
+  background-image: url("../images/main_sprite.png");
+  background-repeat: no-repeat;
+  background-position: -130px -602px;
+  background-color: transparent;
+  width: 133px;
+  height: 114px;
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  right: 45%;
+  left: 45%;
+}
+/* line 731, ../scss/layout/_layout-home.scss */
+.media .middle-row h2 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 55px;
+  margin: 45px 0 0;
+  height: 70px;
+}
+/* line 740, ../scss/layout/_layout-home.scss */
+.media .in-media {
+  background-color: #cc223c;
+}
+/* line 742, ../scss/layout/_layout-home.scss */
+.media .in-media .container {
+  background-color: #ee175a;
+}
+/* line 745, ../scss/layout/_layout-home.scss */
+.media .in-media .container .media-slider {
+  padding: 38px 52px 27px 52px;
+}
+/* line 747, ../scss/layout/_layout-home.scss */
+.media .in-media .container .media-slider img {
+  margin-bottom: 15px;
+}
+/* line 750, ../scss/layout/_layout-home.scss */
+.media .in-media .container .media-slider p {
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+/* line 755, ../scss/layout/_layout-home.scss */
+.media .in-media .container .media-slider a {
+  color: #5cf192;
+  text-align: left;
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 22px;
+  display: block;
+}
+/* line 766, ../scss/layout/_layout-home.scss */
+.media .in-media .container .media-slider.owl-carousel.owl-theme .owl-prev {
+  background-image: url("../images/main_sprite.png");
+  background-repeat: no-repeat;
+  background-position: -41px -558px;
+  background-color: transparent;
+}
+/* line 769, ../scss/layout/_layout-home.scss */
+.media .in-media .container .media-slider.owl-carousel.owl-theme .owl-next {
+  background-image: url("../images/main_sprite.png");
+  background-repeat: no-repeat;
+  background-position: -2px -558px;
+  background-color: transparent;
+}
+
+/* line 780, ../scss/layout/_layout-home.scss */
+footer {
+  background-color: #240d35;
+  padding: 65px 0 70px 0;
+}
+/* line 783, ../scss/layout/_layout-home.scss */
+footer p {
+  color: #f1f2f2;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.2rem;
+  font-weight: 300;
+  font-size: 16px;
+}
+/* line 790, ../scss/layout/_layout-home.scss */
+footer p a {
+  font-weight: 300;
+  font-size: 16px;
 }
