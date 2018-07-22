@@ -562,7 +562,7 @@ header{
 }
 
 .faq{
-    background-color: $green-4;
+  background-color: $green-4;
   .container{
     padding: 45px 0 80px 0;
 
@@ -643,6 +643,45 @@ header{
           }
          }
       }
+    }
+  }
+}
+
+.media{
+  margin: 0;
+  .top-row{
+    padding: 66px 0 40px 0;
+    text-align: center;
+    position: relative;
+    //height: 293px;
+    .icon-bg{
+      @include sprite(-2px,-604px);
+      @include size(126px,187px);
+      display: inline-block;
+      position: absolute;
+      z-index: -1;      
+      right: 45%;
+      left: 45%;
+    }
+  }
+  h2{
+    text-align: center;
+    font-weight: 800;
+    font-size: 55px;
+    margin: 62px 0 0;
+    height: 122px;
+  }
+  .recommendations{
+    background-color: $gray-dark;
+    height: 249px;
+    .container{
+      background-color: $gray-light;
+    }
+    .recom-slider{
+      img{
+        width: auto;
+      }
+      padding: 0 55px;
     }
   }
 }

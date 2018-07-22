@@ -96,8 +96,19 @@ jQuery(document).ready(function($){
           mouseWheel: true 
       });
   /********** End Scrollbar in in faq tabs **********/
-  }
 
+  /********** partners slider **********/
+      var owlr = $('.owl-carousel.recom-slider');
+      owlr.owlCarousel({
+          loop:false,
+          nav:true,
+          dots:false,
+          navText:'',
+          rtl:true,
+          items:1
+      })
+  /********** End partners slider **********/
+  }
 
 /****************************************************************************************************/
 

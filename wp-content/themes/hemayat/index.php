@@ -292,7 +292,7 @@ Template Name: Home
                                 <span>نوع بازی،‌ پیچیدگی تولید‌، قابلیت اجرا بر بستر اینترنت، تست‌های سازگاری و عملکرد بازی تیم/ شرکت شما، 49% از امتیازتان را شکل می‌دهند.</span>
                             </li>
                             <li><strong> اثرگذاری بازی‌تان:</strong>
-                                <span> شاخص¬های ارزشی و اخلاقی بازی شما که براساس اصول دقیق روانشناسی و جامعه‌شناسی استوار هستند، 1۰% از امتیاز شما را شکل می‌دهند.</span>
+                                <span> شاخص¬های ارزشی و اخلاقی بازی شما که براساس اصول دقیق روانشناسی و جامعه‌شناسی استوار هستند، 10% از امتیاز شما را شکل می‌دهند.</span>
                             </li>
                             <li><strong>‌وضعیت حقوقی‌تان: </strong>
                                 <span>تعداد نیروی انسانی بیمه شده، میزان درآمد داخلی و خارجی، شرکت در جشنواره‌ها و نمایشگاه‌ها و... بررسی می‌شوند تا 30% از امتیاز شما را شکل ‌دهند.</span>
@@ -315,7 +315,7 @@ Template Name: Home
 
             <div class="video-register">
                 <div class="container">
-                    <img src="http://localhost/hamgera/wp-content/themes/hemayat/library/images/video.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/video.png" alt="">
                 </div>
             </div>
 
@@ -430,6 +430,46 @@ Template Name: Home
                 </div>  
             </div>
         </section>
+
+         <section class="section media" data-section-name="media">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 top-row">
+                        <span class="icon-bg"></span>
+                        <h2>افراد معروف درباره ما چه میگویند</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="recommendations">
+                <div class="container">
+                    <div class="owl-carousel owl-theme recom-slider">
+                       <!--  <?php
+                           foreach(  $slides as $key => $args ){
+                               $meta       = get_post_meta($slides[$key]->ID);
+                               $img        = $meta['wpcf-image-slider'];
+                           ?>
+                           <?php $meta ?> -->
+                            <div class="slide">
+                                <img src="<?php echo get_template_directory_uri(); ?>/library/images/testimonial.png" alt="">
+                                <p> می‌توانیم به تمامی مخاطبانی که در سرویس ما ثبت‌نام کرده‌اند خدمات باکیفیت ارائه دهیم. هدف‌مان این است که راه رشد شما را کوتاه‌تر و هموارتر کنیم!</p>
+                                <span>انوشه نوروزی</span>
+                            </div>
+                            <div class="slide">
+                                <img src="<?php echo get_template_directory_uri(); ?>/library/images/testimonial.png" alt="">
+                                <p> می‌توانیم به تمامی مخاطبانی که در سرویس ما ثبت‌نام کرده‌اند خدمات باکیفیت ارائه دهیم. هدف‌مان این است که راه رشد شما را کوتاه‌تر و هموارتر کنیم!</p>
+                                <span>انوشه نوروزی</span>
+                            </div>
+                            <div class="slide">
+                                <img src="<?php echo get_template_directory_uri(); ?>/library/images/testimonial.png" alt="">
+                                <p> می‌توانیم به تمامی مخاطبانی که در سرویس ما ثبت‌نام کرده‌اند خدمات باکیفیت ارائه دهیم. هدف‌مان این است که راه رشد شما را کوتاه‌تر و هموارتر کنیم!</p>
+                                <span>انوشه نوروزی</span>
+                            </div>
+
+                        <!-- <?php } ?> -->
+                    </div>
+                </div>
+            </div>
+         </section>
 
 
 

@@ -1417,3 +1417,53 @@ header .navigation .nav-menu li:last-child {
   background-position: -338px -580px;
   background-color: transparent;
 }
+
+/* line 650, ../scss/layout/_layout-home.scss */
+.media {
+  margin: 0;
+}
+/* line 652, ../scss/layout/_layout-home.scss */
+.media .top-row {
+  padding: 66px 0 40px 0;
+  text-align: center;
+  position: relative;
+}
+/* line 657, ../scss/layout/_layout-home.scss */
+.media .top-row .icon-bg {
+  background-image: url("../images/main_sprite.png");
+  background-repeat: no-repeat;
+  background-position: -2px -604px;
+  background-color: transparent;
+  width: 126px;
+  height: 187px;
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  right: 45%;
+  left: 45%;
+}
+/* line 667, ../scss/layout/_layout-home.scss */
+.media h2 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 55px;
+  margin: 62px 0 0;
+  height: 122px;
+}
+/* line 674, ../scss/layout/_layout-home.scss */
+.media .recommendations {
+  background-color: #e0e1e2;
+  height: 249px;
+}
+/* line 677, ../scss/layout/_layout-home.scss */
+.media .recommendations .container {
+  background-color: #f1f2f2;
+}
+/* line 680, ../scss/layout/_layout-home.scss */
+.media .recommendations .recom-slider {
+  padding: 0 55px;
+}
+/* line 681, ../scss/layout/_layout-home.scss */
+.media .recommendations .recom-slider img {
+  width: auto;
+}
