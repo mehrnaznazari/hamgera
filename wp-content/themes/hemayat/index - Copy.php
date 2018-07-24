@@ -130,49 +130,41 @@ Template Name: Home
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="hegsa">
-                                    <?php 
-                                       /* $hegsa_1 = get_post( 67, ARRAY_A );
-                                        echo $hegsa_1['post_title'];
-                                        echo $hegsa_1['post_content'];*/
-                                     ?>
-                                    <?php echo get_the_title( 67 );
-                                    //echo get_post_field('post_content', 67);
-
-                                     ?>
+                                    به جذب تسهیلات مالی و سرمایه گذاری نیاز دارید؟
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="hegsa">
-                                    <?php echo get_the_title( 70 ); ?>
+                                    به تجهیزات، امکانات و محل استقرار نیاز دارید؟
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="hegsa">
-                                    <?php echo get_the_title( 71 ); ?>
+                                    به تجهیزات، امکانات و محل استقرار نیاز دارید؟
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="hegsa">
-                                    <?php echo get_the_title( 72 ); ?>
+                                    به تجهیزات، امکانات و محل استقرار نیاز دارید؟
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="hegsa">
-                                    <?php echo get_the_title( 78 ); ?>
+                                    به تجهیزات، امکانات و محل استقرار نیاز دارید؟
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="hegsa">
-                                    <?php echo get_the_title( 81 ); ?>
+                                    به تجهیزات، امکانات و محل استقرار نیاز دارید؟
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="hegsa">
-                                    <?php echo get_the_title( 83 ); ?>
+                                    به تجهیزات، امکانات و محل استقرار نیاز دارید؟
                                 </div>
                             </div>
                         </div>
@@ -388,39 +380,80 @@ Template Name: Home
                         <h2>هنوز سوال دارم</h2>
                     </div>
                 </div>
-                <?php 
-                    $args = array(
-                        'post_type'   => 'post', 
-                        'category_name'    => 'faq',
-                        'numberposts' => -1,
-                        'post_status' => 'any' ,
-                        'order' => 'ASC',
-                    );
 
-                    $faq_posts  = get_posts( $args );
-                ?>
                 <div class="row no-margin">
-
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">
-                        <?php 
-                        foreach ($faq_posts as $key => $faq_post) : ?>
-
-                            <li role="presentation"><a href="#faq_<?= $key; ?>" aria-controls="faq_<?= $key; ?>" role="tab" data-toggle="tab"><?= $faq_post->post_title ?></a></li>
-
-                        <?php endforeach ?> 
+                        <li role="presentation" class="active"><a href="#support_faq" aria-controls="support_faq" role="tab" data-toggle="tab">سوالات حمایت</a></li>
+                        <li role="presentation"><a href="#grading_faq" aria-controls="grading_faq" role="tab" data-toggle="tab">سوالات گریدبندی</a></li>
+                        <li role="presentation"><a href="#evaluation_faq" aria-controls="evaluation_faq" role="tab" data-toggle="tab">سوالات ارزیابی</a></li>
+                        <li role="presentation"><a href="#registration_faq" aria-controls="registration_faq" role="tab" data-toggle="tab">سوالات ثبت نام</a></li>
+                         <li role="presentation"><a href="#general_faq" aria-controls="general_faq" role="tab" data-toggle="tab">سوالات عمومی</a></li>
                     </ul>
 
                     <!-- Tab panes -->
                     <div class="tab-content">
-                        <?php 
-                        foreach ($faq_posts as $key => $faq_post) :  ?>
-                            
-                            <div role="tabpanel" class="tab-pane" id="faq_<?= $key; ?>">
-                                <?= $faq_post->post_content; ?>
-                            </div>
-
-                        <?php endforeach ?> 
+                        <div role="tabpanel" class="tab-pane active" id="support_faq">
+                            <ul>
+                                <li>
+                                    حمایت‌ها از جنس تسهیلات هستند یا بلاعوض؟
+                                    <p>حمایت‌ها هم به‌صورت بلاعوض هستند هم به صورت تسهیلات. اما اکثر حمایت‌ها بلاعوض هستند</p>
+                                </li>
+                                <li>
+                                    حمایت‌های دریافتی را خودمان انتخاب می‌کنیم؟
+                                    <p>دقیقا! با توجه به گریدی که از ارزیابی بدست آورده‌اید، می‌توانید حمایت‌هایی که به شما نمایش داده خواهد شد و مورد نیازتان است را انتخاب کرده و از آن بهره‌برداری کنید. پس از یک سال، این فرایند تکرار خواهد شد.</p>
+                                </li>
+                                <li>
+                                    حمایت‌ها به چه صورت به دستمان خواهد رسید؟
+                                    <p>بعد از فرایند ارزیابی و گریدبندی، گرید به شما اعلام شده و لیستی از حمایت‌هایی که می‌توانید از آن‌ها بهره‌برداری کنید به شما نمایش داده خواهد شد.</p>
+                                </li>
+                                <li>
+                                    چه نوع حمایت‌هایی در برنامه‌ی شما وجود دارد؟
+                                    <p>تامین تجهیزات سخت‌افزاری و نرم‌افزاری، تامین خدمات زیرساختی پشتیبانی (مانند سرور، صداگذاری، رندینگ، موشن کپچر و...)، تامین فضای استقرار شرکت‌ها و تیم‌ها، خدمات پشتیبانی، خدمات آزمون در تولید و نشر بازی‌های ویدئویی، تسهیلات مالی و سرمایه‌گذاری، تبلیغات و بازاریابی و توسعه بازار، ارائه تسهیلات مالی، مشاوره و منتورینگ است.</p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="grading_faq">
+                            <ul>
+                                <li>
+                                    حمایت‌ها از جنس تسهیلات هستند یا بلاعوض؟
+                                    <p>حمایت‌ها هم به‌صورت بلاعوض هستند هم به صورت تسهیلات. اما اکثر حمایت‌ها بلاعوض هستند</p>
+                                </li>
+                                <li>
+                                    حمایت‌های دریافتی را خودمان انتخاب می‌کنیم؟
+                                    <p>دقیقا! با توجه به گریدی که از ارزیابی بدست آورده‌اید، می‌توانید حمایت‌هایی که به شما نمایش داده خواهد شد و مورد نیازتان است را انتخاب کرده و از آن بهره‌برداری کنید. پس از یک سال، این فرایند تکرار خواهد شد.</p>
+                                </li>
+                                <li>
+                                    حمایت‌ها به چه صورت به دستمان خواهد رسید؟
+                                    <p>بعد از فرایند ارزیابی و گریدبندی، گرید به شما اعلام شده و لیستی از حمایت‌هایی که می‌توانید از آن‌ها بهره‌برداری کنید به شما نمایش داده خواهد شد.</p>
+                                </li>
+                                <li>
+                                    چه نوع حمایت‌هایی در برنامه‌ی شما وجود دارد؟
+                                    <p>تامین تجهیزات سخت‌افزاری و نرم‌افزاری، تامین خدمات زیرساختی پشتیبانی (مانند سرور، صداگذاری، رندینگ، موشن کپچر و...)، تامین فضای استقرار شرکت‌ها و تیم‌ها، خدمات پشتیبانی، خدمات آزمون در تولید و نشر بازی‌های ویدئویی، تسهیلات مالی و سرمایه‌گذاری، تبلیغات و بازاریابی و توسعه بازار، ارائه تسهیلات مالی، مشاوره و منتورینگ است.</p>
+                                </li>
+                                <li>
+                                    حمایت‌ها از جنس تسهیلات هستند یا بلاعوض؟
+                                    <p>حمایت‌ها هم به‌صورت بلاعوض هستند هم به صورت تسهیلات. اما اکثر حمایت‌ها بلاعوض هستند</p>
+                                </li>
+                                <li>
+                                    حمایت‌های دریافتی را خودمان انتخاب می‌کنیم؟
+                                    <p>دقیقا! با توجه به گریدی که از ارزیابی بدست آورده‌اید، می‌توانید حمایت‌هایی که به شما نمایش داده خواهد شد و مورد نیازتان است را انتخاب کرده و از آن بهره‌برداری کنید. پس از یک سال، این فرایند تکرار خواهد شد.</p>
+                                </li>
+                                <li>
+                                    حمایت‌ها به چه صورت به دستمان خواهد رسید؟
+                                    <p>بعد از فرایند ارزیابی و گریدبندی، گرید به شما اعلام شده و لیستی از حمایت‌هایی که می‌توانید از آن‌ها بهره‌برداری کنید به شما نمایش داده خواهد شد.</p>
+                                </li>
+                                <li>
+                                    چه نوع حمایت‌هایی در برنامه‌ی شما وجود دارد؟
+                                    <p>تامین تجهیزات سخت‌افزاری و نرم‌افزاری، تامین خدمات زیرساختی پشتیبانی (مانند سرور، صداگذاری، رندینگ، موشن کپچر و...)، تامین فضای استقرار شرکت‌ها و تیم‌ها، خدمات پشتیبانی، خدمات آزمون در تولید و نشر بازی‌های ویدئویی، تسهیلات مالی و سرمایه‌گذاری، تبلیغات و بازاریابی و توسعه بازار، ارائه تسهیلات مالی، مشاوره و منتورینگ است.</p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="evaluation_faq">3...</div>
+                        <div role="tabpanel" class="tab-pane" id="registration_faq">4...</div>
+                        <div role="tabpanel" class="tab-pane" id="general_faq">5...</div>
                     </div>
 
                 </div>  
@@ -440,30 +473,35 @@ Template Name: Home
             <div class="recommendations">
                 <div class="container">
                     <div class="owl-carousel owl-theme recom-slider">
-                        <?php
-                            $args_recom = array(
-                                'category'         => '',
-                                'orderby'          => 'order',
-                                'order'            => 'ASC',
-                                'post_type'        => 'recom-slider',
-                                'post_status'      => 'publish',
-                                'posts_per_page'   => -1
-                            );
-                            $recom_slides = get_posts($args_recom);
-
-                            foreach( $recom_slides as $key => $recom_slide ){
-                                $meta_recom      = get_post_meta($recom_slides[$key]->ID);
-                                $advisor_img     = $meta_recom['wpcf-adviser-img'];
-                                $advisor_name    = $meta_recom['wpcf-adviser-name'];
-                            ?>
+                       <!--  <?php
+                           foreach(  $slides as $key => $args ){
+                               $meta       = get_post_meta($slides[$key]->ID);
+                               $img        = $meta['wpcf-image-slider'];
+                           ?>
+                           <?php $meta ?> -->
                             <div class="slide">
-                                <img src="<?= $advisor_img[0]; ?>" alt="<?= $advisor_name[0]; ?>" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/library/images/testimonial.png" alt="">
                                 <div class="text-slide">
-                                    <?php echo $recom_slide->post_content; ?>
-                                    <span><?= $advisor_name[0]; ?></span>
+                                    <p> می‌توانیم به تمامی مخاطبانی که در سرویس ما ثبت‌نام کرده‌اند خدمات باکیفیت ارائه دهیم. هدف‌مان این است که راه رشد شما را کوتاه‌تر و هموارتر کنیم!</p>
+                                    <span>انوشه نوروزی</span>
                                 </div>
                             </div>
-                        <?php } ?>
+                            <div class="slide">
+                                <img src="<?php echo get_template_directory_uri(); ?>/library/images/testimonial.png" alt="">
+                                <div class="text-slide">
+                                    <p> می‌توانیم به تمامی مخاطبانی که در سرویس ما ثبت‌نام کرده‌اند خدمات باکیفیت ارائه دهیم. هدف‌مان این است که راه رشد شما را کوتاه‌تر و هموارتر کنیم!</p>
+                                    <span>انوشه نوروزی</span>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <img src="<?php echo get_template_directory_uri(); ?>/library/images/testimonial.png" alt="">
+                                <div class="text-slide">
+                                    <p> می‌توانیم به تمامی مخاطبانی که در سرویس ما ثبت‌نام کرده‌اند خدمات باکیفیت ارائه دهیم. هدف‌مان این است که راه رشد شما را کوتاه‌تر و هموارتر کنیم!</p>
+                                    <span>انوشه نوروزی</span>
+                                </div>
+                            </div>
+
+                        <!-- <?php } ?> -->
                     </div>
                 </div>
             </div>
@@ -480,28 +518,26 @@ Template Name: Home
             <div class="in-media">
                 <div class="container">
                     <div class="owl-carousel owl-theme media-slider">
-                        <?php
-                            $args_media = array(
-                                'category'         => '',
-                                'orderby'          => 'order',
-                                'order'            => 'ASC',
-                                'post_type'        => 'media-slider',
-                                'post_status'      => 'publish',
-                                'posts_per_page'   => -1
-                            );
-                            $media_slides = get_posts($args_media);
-
-                            foreach( $media_slides as $key => $media_slide ){
-                                $meta_media    = get_post_meta($media_slides[$key]->ID);
-                                $media_img     = $meta_media['wpcf-media-slide-img'];
-                                $media_url     = $meta_media['wpcf-media-slide-url'];
-                            ?>
-                            <div class="slide">
-                                <img  src="<?= $media_img[0]; ?>" alt="<?= $media_slide->post_title; ?>" />
-                                <p><?php echo $media_slide->post_title; ?></p>
-                                <a href="<?= $media_url[0]; ?>" title="<?= $media_slide->post_title; ?>">+ادامه مطلب</a>
-                            </div>
-                        <?php } ?>
+                        <div class="slide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/media-1.jpg" alt="">
+                            <p>سامانه همگرا برای نخستین بار در بخش نمایشگاهی TGC معرفی شد</p>
+                            <a href="#">+ادامه مطلب</a>
+                        </div>
+                        <div class="slide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/media-1.jpg" alt="">
+                            <p>سامانه همگرا برای نخستین بار در بخش نمایشگاهی TGC معرفی شد</p>
+                            <a href="#">+ادامه مطلب</a>
+                        </div>
+                        <div class="slide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/media-1.jpg" alt="">
+                            <p>سامانه همگرا برای نخستین بار در بخش نمایشگاهی TGC معرفی شد</p>
+                            <a href="#">+ادامه مطلب</a>
+                        </div>
+                        <div class="slide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/media-1.jpg" alt="">
+                            <p>سامانه همگرا برای نخستین بار در بخش نمایشگاهی TGC معرفی شد</p>
+                            <a href="#">+ادامه مطلب</a>
+                        </div>
                     </div>
                 </div>
             </div>

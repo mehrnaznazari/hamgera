@@ -293,14 +293,14 @@ header{
         background: url('../images/hegsa.png') no-repeat center center;
         @include transition(all 0.3s);
         @include size(161px,186px);
-        display:block;
-        color: $base-color;
-        padding-top: 73px;
+        padding: 73px 6px 0 6px;
         text-align: center;
-        line-height: 1.4rem;
+        line-height: 1.25rem;
         font-weight: 800;
         font-size: 16px;
         cursor: pointer;
+        color: $base-color;
+        display:block;
         &:hover ,&.active{
           color:$red-color;
         }
@@ -590,11 +590,11 @@ header{
           margin: 0;
           &>a{
             @include border-radius(0);
-            line-height: 4.5rem;
+            line-height: 6rem;
             margin-left: 18px;
             font-weight: 800;
             font-size: 33px;
-            padding: 10px 0;
+            padding: 2px 0;
             border: none;
             &:hover ,&:focus{
               background-color: transparent;

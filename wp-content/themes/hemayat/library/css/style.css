@@ -991,14 +991,14 @@ header .navigation .nav-menu li:last-child {
   transition: all 0.3s;
   width: 161px;
   height: 186px;
-  display: block;
-  color: #240d35;
-  padding-top: 73px;
+  padding: 73px 6px 0 6px;
   text-align: center;
-  line-height: 1.4rem;
+  line-height: 1.25rem;
   font-weight: 800;
   font-size: 16px;
   cursor: pointer;
+  color: #240d35;
+  display: block;
 }
 /* line 304, ../scss/layout/_layout-home.scss */
 .services .container .our-supports .hegsa:hover, .services .container .our-supports .hegsa.active {
@@ -1364,11 +1364,11 @@ header .navigation .nav-menu li:last-child {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
-  line-height: 4.5rem;
+  line-height: 6rem;
   margin-left: 18px;
   font-weight: 800;
   font-size: 33px;
-  padding: 10px 0;
+  padding: 2px 0;
   border: none;
 }
 /* line 599, ../scss/layout/_layout-home.scss */
