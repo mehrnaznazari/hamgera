@@ -25,6 +25,18 @@
     	<script src="<?php echo get_template_directory_uri(); ?>/library/js/app.js"></script>
 
 
+<!-- <link rel="stylesheet" type="text/css" href=".<?php echo get_template_directory_uri(); ?>/library/css/fullpage.css" />
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/library/js/fullpage.js"></script>
+
+<script type="text/javascript">
+  var myFullpage = new fullpage('#fullpage', {
+      verticalCentered: false,
+      responsiveHeight: 600,
+    	
+  });
+</script> -->
+
+
 	</body>
 
 </html> <!-- end of site. what a ride! -->

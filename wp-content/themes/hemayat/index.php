@@ -6,9 +6,9 @@ Template Name: Home
 <?php get_header(); ?>
 
 <div id="content" class="container-fluid">
-    <main id="main">
+    <main id="fullpage">
 
-        <section class="main-slider" data-section-name="home">
+        <section class="section main-slider" id="home" data-section-name="home">
             <div class="inner-content container">
                 <?php
                     $args = array(
@@ -45,7 +45,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section class="section about" data-section-name="about">
+        <section class="section about"  id="about" data-section-name="about">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 btn-about">
@@ -84,8 +84,6 @@ Template Name: Home
                                 $post_mission = get_post( 35, ARRAY_A );
                                 echo $post_mission['post_content'];
                             ?>
-                           <!--  <strong>در همگرا چه هدفی داریم؟ </strong>
-                            <p>هدف اصلی، همگرا کردن حمایت‌هایی است که در بنیاد ملی بازی‎‌های رایانه‌ای به بازیسازان ارائه می‌کنیم تا با متنوع‌ترین خدمات، صنعت بازی ایران را توانمند کنیم.</p> -->
                         </div>
 
                     </div>
@@ -100,21 +98,37 @@ Template Name: Home
                                 $post_vision = get_post( 38, ARRAY_A );
                                 echo $post_vision['post_content'];
                             ?>
-                            <!-- <strong>چه چشم‌اندازی را دنبال می‌کنیم؟</strong>
-                            <p>شفاف‌سازی حمایت‌های بنیاد ملی بازی‌های رایانه‌ای، ارتقاء تعالی شرکت‌ها/ تیم‌ها و تحول ساختاری صنعت بازی ایران از طریق ارائه‌ی متنوع‌ترین، بهترین و سریع‌ترین خدمات حمایتی </p> -->
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="video-aboutus">
+                <?php 
+                    $video_post         = get_post( 92, ARRAY_A );
+                    $video_meta         = get_post_custom(92);
+                    $video_id           = $video_meta['wpcf-video-id'][0];
+                    $video_capture      = $video_meta['wpcf-video-capture'][0];
+                 ?>
                 <div class="container">
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/video.png" alt="">
+                    <img src="<?= $video_capture; ?>" alt="درباره همگرا" data-toggle="modal" data-target="#exampleModalCenter">
+                </div>
+                
+                <div class="modal modal-wide fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <?php 
+                            if ($video_id) { ?>
+                                <div class="h_iframe-aparat_embed_frame"> <span style="display: block;padding-top: 56%"></span><iframe src="https://www.aparat.com/video/video/embed/videohash/<?php echo $video_id ?>/vt/frame" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" ></iframe></div>
+                        <?php } ?>
+                    </div>
+                  </div>
                 </div>
             </div>
         </section>
 
-        <section class="section services" data-section-name="services">
+        <section class="section services" id="services" data-section-name="services">
             <div class="container">
                 <div class="icon-service"></div>
                 <h2>در همگرا برای تمام نیازهای تان راه حلی داریم !</h2>
@@ -122,56 +136,61 @@ Template Name: Home
                 <div class="row our-supports">
                     <div class="col-md-3">
                         <div class="support-details">
-                            <strong>به تجهیزات، امکانات و محل استقرار نیاز دارید؟ </strong>
-                            <p>کمبود امکانات و نداشتن تجهیزات به روز، رسیدن به اهداف را سخت و یا حتی غیرممکن میسازد. تخفیف مناسب برای خدمات زیرساختی (مانند سرور، صداگذاری، رندرینگ، موشن کپچر و ...)، وام حمایتی برای تهیه محل استقرار، خرید تجهیزات سختافزاری/ نرمافزاری و لایسنس‌های مورد نیاز، در کنار ما ممکن خواهد شد.</p>
+                         <?php 
+                            $thePostIdArray = array("67","70", "71", "72", "78", "81","83");
+                            $limit = 7; $counter = 0;
+                            if (have_posts()) : 
+                                foreach ($thePostIdArray as $id) { ?>
+                                    <div id="post-<?= $id; ?>">
+                                     <?php
+                                        $queried_post = get_post($id);
+                                        echo $queried_post->post_content;
+                                     ?>
+                                    </div>
+                                <?php  } 
+                            endif;
+                         ?>
                         </div>
                     </div>
+
                     <div class="col-md-9">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="hegsa">
-                                    <?php 
-                                       /* $hegsa_1 = get_post( 67, ARRAY_A );
-                                        echo $hegsa_1['post_title'];
-                                        echo $hegsa_1['post_content'];*/
-                                     ?>
-                                    <?php echo get_the_title( 67 );
-                                    //echo get_post_field('post_content', 67);
-
-                                     ?>
+                                <div class="hegsa" data-id="67">
+                                    <?php echo get_the_title( 67 );?>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="hegsa">
+                                <div class="hegsa" data-id="70">
                                     <?php echo get_the_title( 70 ); ?>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="hegsa">
+                                <div class="hegsa" data-id="71">
                                     <?php echo get_the_title( 71 ); ?>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="hegsa">
+                                <div class="hegsa" data-id="72">
                                     <?php echo get_the_title( 72 ); ?>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="hegsa">
+                                <div class="hegsa" data-id="78">
                                     <?php echo get_the_title( 78 ); ?>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="hegsa">
+                                <div class="hegsa" data-id="81">
                                     <?php echo get_the_title( 81 ); ?>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="hegsa">
+                                <div class="hegsa" data-id="83">
                                     <?php echo get_the_title( 83 ); ?>
                                 </div>
                             </div>
@@ -181,7 +200,7 @@ Template Name: Home
             </div>
         </section>
 
-         <section class="section our-advantages" data-section-name="advantages">
+         <section class="section our-advantages" id="advantages" data-section-name="advantages">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-advantages">
                     <div class="panel-heading" role="tab" id="headingOne">
@@ -192,7 +211,6 @@ Template Name: Home
                                 $post_advantages = get_post( 40, ARRAY_A );
                                 echo $post_advantages['post_title'];
                             ?>
-                            <!-- چرا بهترین حامی صنعت بازی هستیم؟ -->
                         </a>
                       </h4>
                     </div>
@@ -224,7 +242,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section class="section partners" data-section-name="partners">
+        <section class="section partners" id="partners" data-section-name="partners">
             <div class="container">
                 <div class="row no-margin">
                     <div class="icon col-sm-12">
@@ -272,7 +290,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section class="section get-support" data-section-name="getSupport">
+        <section class="section get-support" id="getSupport" data-section-name="getSupport">
             <div class="panel-group" id="register" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-converge">
                     <div class="panel-heading" role="tab" id="headingTwo">
@@ -283,7 +301,6 @@ Template Name: Home
                                     $post_support_1 = get_post( 42, ARRAY_A );
                                     echo $post_support_1['post_title'];
                                 ?>
-                                <!-- چگونه با ما همگرا شوید؟  -->
                             </a>
                         </h4>
                     </div>
@@ -291,18 +308,6 @@ Template Name: Home
                     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                         <div class="container panel-body">
                             <?php echo $post_support_1['post_content']; ?>
-                        <!-- <ul>
-                            <li><strong>تیم / شرکت: </strong>
-                                <span>اولین پیش‌شرط برای پیوستن به همگرا این است که تیم یا شرکت بازیسازی باشید.</span>
-                            </li>
-                            <li><strong>ساخت بازی: </strong>
-                                <span>برای پیوستن به همگرا باید در چهار سال گذشته حداقل دو بازی ساخته و در بازار عرضه کرده باشید</span>
-                            </li>
-                            <li><strong>فعال بودن: </strong>
-                                <span>شما باید حتما تیم کاری فعالی داشته باشید که هم‌اکنون در حال کار روی یک عنوان بازی باشد.</span>
-                            </li>
-                        </ul> -->
-
                         </div>
                     </div>
                 </div>
@@ -316,7 +321,6 @@ Template Name: Home
                                     $post_support_2 = get_post( 44, ARRAY_A );
                                     echo $post_support_2['post_title'];
                                 ?>
-                                <!-- شما را چگونه می‌سنجیم؟ -->
                             </a>
                         </h4>
                     </div>
@@ -324,21 +328,6 @@ Template Name: Home
                     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                         <div class="container panel-body">
                             <?php  echo $post_support_2['post_content']; ?>
-                            <!-- <p>به منظور شناخت تیم‌ها و شرکت‌های بازیساز، از کمک کارشناسان متخصص استفاده می‌کنیم تا زمینه‌های زیر را بررسی کنیم:</p>
-                            <ul>
-                                <li><strong>‌کیفیت بازی‌تان: </strong>
-                                    <span>نوع بازی،‌ پیچیدگی تولید‌، قابلیت اجرا بر بستر اینترنت، تست‌های سازگاری و عملکرد بازی تیم/ شرکت شما، 49% از امتیازتان را شکل می‌دهند.</span>
-                                </li>
-                                <li><strong> اثرگذاری بازی‌تان:</strong>
-                                    <span> شاخص¬های ارزشی و اخلاقی بازی شما که براساس اصول دقیق روانشناسی و جامعه‌شناسی استوار هستند، 10% از امتیاز شما را شکل می‌دهند.</span>
-                                </li>
-                                <li><strong>‌وضعیت حقوقی‌تان: </strong>
-                                    <span>تعداد نیروی انسانی بیمه شده، میزان درآمد داخلی و خارجی، شرکت در جشنواره‌ها و نمایشگاه‌ها و... بررسی می‌شوند تا 30% از امتیاز شما را شکل ‌دهند.</span>
-                                </li>
-                                <li><strong>میزان همکاری‌تان با ما: </strong>
-                                    <span>به‌کارگیری کارآموزان و انجام پژوهش‌های مرتبط با صنعت بازی با سایر اعضای همگرا، 11% از امتیاز شما را به خود اختصاص می‌دهند.</span>
-                                </li>
-                            </ul> -->
                         </div>
                     </div>
                 </div>
@@ -346,41 +335,66 @@ Template Name: Home
 
             <div class="gif-view">
                 <div class="container">
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/git-icon.png" alt="">
+                    <?php $gif_url =  get_post_custom(102);?>
+                    <img src="<?php echo $gif_url['wpcf-video-capture'][0]; ?>" alt="مراحل ثبت نام">
+                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/library/images/git-icon.png" alt="مراحل ثبت نام"> -->
                 </div>
             </div>
 
             <div class="video-register">
-                <div class="container">
+                <!-- <div class="container">
                     <img src="<?php echo get_template_directory_uri(); ?>/library/images/video.png" alt="">
+                </div> -->
+
+                <?php 
+                    $video_post         = get_post( 97, ARRAY_A );
+                    $video_meta         = get_post_custom(97);
+                    $video_id           = $video_meta['wpcf-video-id'][0];
+                    $video_capture      = $video_meta['wpcf-video-capture'][0];
+                 ?>
+                <div class="container">
+                    <img src="<?= $video_capture; ?>" alt="درباره همگرا" data-toggle="modal" data-target="#ModalCenter">
                 </div>
+                
+                <div class="modal modal-wide fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <?php 
+                            if ($video_id) { ?>
+                                <div class="h_iframe-aparat_embed_frame"> <span style="display: block;padding-top: 56%"></span><iframe src="https://www.aparat.com/video/video/embed/videohash/<?php echo $video_id ?>/vt/frame" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" ></iframe></div>
+                        <?php } ?>
+                    </div>
+                  </div>
+                </div>
+
             </div>
 
             <div class="container">
                 <div class="row last-row">
                     <div class="col-md-4 icon-1">
-                        <a href="#" title="">
-                            <span class="icon"></span>
-                            <span>فرد حقیقی هستم می‌خواهم شرکت رو ثبت کنم  </span>
+                        <a href="https://portal.ircg.ir/IRCGAssets/Pages/ShowForm?pid=4407" title="می خواهم تیمم را ثبت نام کنم">
+                            <!-- <span class="icon"></span> -->
+                            <span>می خواهم تیمم را ثبت نام کنم</span>
                         </a>
                     </div>
                     <div class="col-md-4 icon-2">
-                        <a href="#" title="">
-                            <span class="icon"></span>
-                            <span> می‌خواهم حامی تجاری شوم</span>
+                        <a href="https://portal.ircg.ir/IRCGAssets/Pages/ShowForm?pid=4395" title="می خواهم شرکتم را ثبت نام کنم">
+                            <!-- <span class="icon"></span> -->
+                            <span>می خواهم شرکتم را ثبت نام کنم</span>
                         </a>
                     </div>
                     <div class="col-md-4 icon-3">
-                        <a href="#" title="">
-                            <span class="icon"></span>
-                            <span>فرد حقیقی هستم می‌خواهم شرکت رو ثبت کنم  </span>
+                        <a href="https://portal.ircg.ir/IRCGAssets/Pages/ShowForm?pid=4432" title="می خواهم حامی تجاری شوم">
+                            <!-- <span class="icon"></span> -->
+                            <span>می خواهم حامی تجاری شوم</span>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section faq" data-section-name="faq">
+        <section class="section faq"  id="faq" data-section-name="faq">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -422,12 +436,11 @@ Template Name: Home
 
                         <?php endforeach ?> 
                     </div>
-
                 </div>  
             </div>
         </section>
 
-        <section class="section media" data-section-name="media">
+        <section class="section media" id="media"  data-section-name="media">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 top-row">
@@ -505,12 +518,10 @@ Template Name: Home
                     </div>
                 </div>
             </div>
-
         </section>
     </main>
 
 
 </div>
-
 
 <?php get_footer(); ?>

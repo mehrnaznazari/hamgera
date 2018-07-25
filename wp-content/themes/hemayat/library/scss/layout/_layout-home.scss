@@ -269,6 +269,18 @@ header{
         @include size(196px, 415px);
         background-color: $bg-color;
         margin-top: 57px;
+        position: relative;
+        &>div{
+          @include transition(all 0.3s);
+          @include transform(scale(0));
+          position: absolute;
+          top: 0;          
+          //display: none;
+          &.active{
+            @include transform(scale(1));
+            //display: block;
+          }
+        }
       }
 
       .col-md-9{
@@ -518,11 +530,11 @@ header{
     .col-md-4{
       position: relative;
       a{
-        @include sprite(-1px, -98px);
+        @include sprite(-329px, -98px);
         @include size(326px,289px);
         display:inline-block;
-        &:hover{
-          @include sprite(-329px, -98px);
+        &:hover, &:focus{
+          @include sprite(-1px, -98px);
           text-decoration: none;
         }
         span{
@@ -793,3 +805,39 @@ footer{
     }
   }
 }
+
+
+.modal.modal-wide{
+  .modal-dialog {
+    /* max-width: 90%;
+    width: 90%;
+    top: 10%; */
+    max-width: 80%;
+    width: 80%;
+    top: 4%;
+    .modal-content{
+      background-color:$black;
+      button{
+        @include opacity(1);
+        position: absolute;
+        color: $red-color;
+        text-shadow:none;
+        font-size: 23px;
+        z-index: 1;
+        left: 15px;
+        top: 8px;
+      }
+     /*  iframe{
+        @include size(100% , 70vh);
+        display: block;
+        height: 70vh;
+        width: 100%;
+      } */
+      
+    }
+  }
+}
+
+.h_iframe-aparat_embed_frame{position:relative;}
+.h_iframe-aparat_embed_frame .ratio {display:block;width:100%;height:auto;}
+.h_iframe-aparat_embed_frame iframe {position:absolute;top:0;left:0;width:100%; height:100%;}

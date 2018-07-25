@@ -13,6 +13,31 @@
 
 		<title><?php wp_title(''); ?></title>
 
+
+		<meta property="og:type" content="game">
+		<!-- <meta property="og:title" content="Medrick Official Website">
+		<meta property="og:description" content="Medrick is a video game publisher and development company founded with the intention of developing and publishing AAA mobile and PC games in the MENA region. Medrick currently is one of the biggest publishers and developers of the region.">
+		<meta property="og:url" content="<?php the_permalink(); ?>">
+		<meta property="og:site_name" content="Medrick Game Studio">
+		<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/library/images/logo.png">
+		
+		<meta name="description" content="Medrick is a video game publisher and development company founded with the intention of developing and publishing AAA mobile and PC games in the MENA region. Medrick currently is one of the biggest publishers and developers of the region.">
+		<meta name="author" content="Medrick Game Studio">
+		
+		<meta name="twitter:card" content="Medrick Studio">
+		<meta name="twitter:site" content="<?php the_permalink(); ?>">
+		<meta name="twitter:title" content="Medrick Official Website">
+		<meta name="twitter:description" content="Medrick is a video game publisher and development company founded with the intention of developing and publishing AAA mobile and PC games in the MENA region.">
+		<meta name="twitter:image" content="<?php echo get_template_directory_uri(); ?>/library/images/logo.png">
+		<meta name="twitter:creator" content="Medrick Studio"> -->
+
+		<link rel="canonical" href="<?php the_permalink(); ?>" />
+
+		<meta name="description" content="">
+  		<meta name="keywords" content="">
+
+
+
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
