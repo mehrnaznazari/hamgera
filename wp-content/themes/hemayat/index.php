@@ -6,9 +6,9 @@ Template Name: Home
 <?php get_header(); ?>
 
 <div id="content" class="container-fluid">
-    <main id="fullpage">
+    <main id="main">
 
-        <section class="section main-slider" id="home" data-section-name="home">
+        <section class="section main-slider"  id="home">
             <div class="inner-content container">
                 <?php
                     $args = array(
@@ -45,19 +45,19 @@ Template Name: Home
             </div>
         </section>
 
-        <section class="section about"  id="about" data-section-name="about">
+        <section class="section about" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 btn-about">
-                        <a href="#" title=""><span>می‌خواهم بیشتر بدانم</span></a>
+                        <a href="#want-to-know-more" title=""><span>می‌خواهم بیشتر بدانم</span></a>
                     </div>
                     <div class="col-md-6 btn-about">
-                        <a href="#" title=""><span>می‌خواهم با حامی همکاری کنم</span></a>
+                        <a href="#getSupport" title=""><span>می‌خواهم با حامی همکاری کنم</span></a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-md-offset-4">
-                        <span class="who-is-us"></span>
+                        <span id="want-to-know-more" class="who-is-us"></span>
                         <?php 
                             $post_about = get_post( 34, ARRAY_A );
                         ?>
@@ -128,7 +128,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section class="section services" id="services" data-section-name="services">
+        <section class="section services" id="services">
             <div class="container">
                 <div class="icon-service"></div>
                 <h2>در همگرا برای تمام نیازهای تان راه حلی داریم !</h2>
@@ -200,7 +200,7 @@ Template Name: Home
             </div>
         </section>
 
-         <section class="section our-advantages" id="advantages" data-section-name="advantages">
+         <section class="section our-advantages" id="advantages">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-advantages">
                     <div class="panel-heading" role="tab" id="headingOne">
@@ -242,7 +242,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section class="section partners" id="partners" data-section-name="partners">
+        <section class="section partners" id="partners">
             <div class="container">
                 <div class="row no-margin">
                     <div class="icon col-sm-12">
@@ -290,7 +290,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section class="section get-support" id="getSupport" data-section-name="getSupport">
+        <section class="section get-support" id="getSupport">
             <div class="panel-group" id="register" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-converge">
                     <div class="panel-heading" role="tab" id="headingTwo">
@@ -394,7 +394,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section class="section faq"  id="faq" data-section-name="faq">
+        <section class="section faq" id="faq">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -440,7 +440,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section class="section media" id="media"  data-section-name="media">
+        <section class="section media" id="media">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 top-row">
@@ -463,7 +463,7 @@ Template Name: Home
                                 'posts_per_page'   => -1
                             );
                             $recom_slides = get_posts($args_recom);
-
+        
                             foreach( $recom_slides as $key => $recom_slide ){
                                 $meta_recom      = get_post_meta($recom_slides[$key]->ID);
                                 $advisor_img     = $meta_recom['wpcf-adviser-img'];
@@ -480,7 +480,7 @@ Template Name: Home
                     </div>
                 </div>
             </div>
-
+        
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 middle-row">
@@ -489,7 +489,7 @@ Template Name: Home
                     </div>
                 </div>
             </div>
-
+        
             <div class="in-media">
                 <div class="container">
                     <div class="owl-carousel owl-theme media-slider">
@@ -503,7 +503,7 @@ Template Name: Home
                                 'posts_per_page'   => -1
                             );
                             $media_slides = get_posts($args_media);
-
+        
                             foreach( $media_slides as $key => $media_slide ){
                                 $meta_media    = get_post_meta($media_slides[$key]->ID);
                                 $media_img     = $meta_media['wpcf-media-slide-img'];
