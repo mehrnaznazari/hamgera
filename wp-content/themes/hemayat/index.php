@@ -333,19 +333,19 @@ Template Name: Home
                 </div>
             </div>
 
-            <div class="gif-view">
+            <!-- <div class="gif-view">
                 <div class="container">
                     <?php $gif_url =  get_post_custom(102);?>
                     <img src="<?php echo $gif_url['wpcf-video-capture'][0]; ?>" alt="مراحل ثبت نام">
-                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/library/images/git-icon.png" alt="مراحل ثبت نام"> -->
+                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/git-icon.png" alt="مراحل ثبت نام">
                 </div>
             </div>
-
+            
             <div class="video-register">
-                <!-- <div class="container">
+                <div class="container">
                     <img src="<?php echo get_template_directory_uri(); ?>/library/images/video.png" alt="">
-                </div> -->
-
+                </div>
+            
                 <?php 
                     $video_post         = get_post( 97, ARRAY_A );
                     $video_meta         = get_post_custom(97);
@@ -367,8 +367,7 @@ Template Name: Home
                     </div>
                   </div>
                 </div>
-
-            </div>
+            </div> -->
 
             <div class="container">
                 <div class="row last-row">
@@ -440,7 +439,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section class="section media" id="media">
+        <!-- <section class="section media" id="media">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 top-row">
@@ -518,7 +517,7 @@ Template Name: Home
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
 

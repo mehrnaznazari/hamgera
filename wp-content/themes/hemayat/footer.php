@@ -3,7 +3,7 @@
 				<div id="inner-footer" class="container">
 					<p>ساختار حمایتی همگرا </p>
                     <p>معاونت حمایت بنیاد ملی بازی‌های رایانه‌ای</p>
-                    <p>تلفن: ۹۸۲۱۸۸۳۱۰۲۲۲+   &nbsp; &nbsp;ایمیل: <a href="mailto:contact@hamgara.com?subject=feedback" "تماس با ما">contact@hamgara.com</a></p>
+                    <p>تلفن: ۹۸۲۱۸۸۳۱۰۲۲۲+   &nbsp; &nbsp;ایمیل: <a href="mailto:contact@hamgara.org?subject=feedback" "تماس با ما">contact@hamgara.org</a></p>
                     <p>سازماندهی شده توسط Ast Creative Studio</p>
 					<!-- <p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p> -->
 				</div>
@@ -25,19 +25,6 @@
         <script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.nav.js"></script>
         
     	<script src="<?php echo get_template_directory_uri(); ?>/library/js/app.js"></script>
-
-
-<!-- <link rel="stylesheet" type="text/css" href=".<?php echo get_template_directory_uri(); ?>/library/css/fullpage.css" />
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/library/js/fullpage.js"></script>
-
-<script type="text/javascript">
-  var myFullpage = new fullpage('#fullpage', {
-      verticalCentered: false,
-      responsiveHeight: 600,
-    	
-  });
-</script> -->
-
 
 	</body>
 
