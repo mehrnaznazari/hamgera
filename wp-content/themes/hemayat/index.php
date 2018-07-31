@@ -252,13 +252,13 @@ Template Name: Home
                 </div>
                 <div class="row">
                     <div class="col-md-4 motion-capture">
-                        <h3>موشن کپچر</h3>
+                        <h3>تست بازی</h3>
                     </div>
                     <div class="col-md-4 infrastructure-equipment">
-                        <h3>تجهیزات زیرساختی</h3>
+                        <h3>استدیو صدا</h3>
                     </div>
                     <div class="col-md-4 sounding">
-                        <h3>صداگذاری</h3>
+                        <h3>مشاوره حقوقی</h3>
                     </div>
                 </div>
                 <div class="owl-carousel owl-theme partner-slider">
@@ -274,11 +274,12 @@ Template Name: Home
                             foreach ( $partner_slides as $post ) {
                                 setup_postdata( $post );
                                 $meta_data   = get_post_meta(get_the_ID());
-                                $partner_img = $meta_data["wpcf-partner-img"];?>
+                                $partner_img = $meta_data["wpcf-partner-img"];
+                                $partner_url = $meta_data["wpcf-partner-url"];?>
 
                                 <div class="slide">
                                     <img class="" src="<?= $partner_img[0]; ?>" alt="<?php the_title(); ?>" />
-                                    <h3><?php the_title(); ?></h3>
+                                    <h3><a href="<?= $partner_url[0] ?>"><?php the_title(); ?></a></h3>
                                 </div>
                             <?php    
                                 the_excerpt();
