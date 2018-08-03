@@ -114,7 +114,7 @@ jQuery(document).ready(function($){
       })
     /********** End recommendation slider **********/
 
-    /********** partners slider **********/
+    /********** media slider **********/
       var owlm = $('.owl-carousel.media-slider');
       owlm.owlCarousel({
           loop:false,
@@ -130,7 +130,7 @@ jQuery(document).ready(function($){
               600:{
                   items:2
               },
-              800:{
+              990:{
                   items:3
               },
               1200:{
@@ -139,7 +139,7 @@ jQuery(document).ready(function($){
           }
       })
       
-    /********** End partners slider **********/
+    /********** End media slider **********/
 
     /********** Navigation Menu  **********/
 

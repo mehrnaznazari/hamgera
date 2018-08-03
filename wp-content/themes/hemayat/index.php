@@ -56,7 +56,7 @@ Template Name: Home
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-md-offset-4">
+                    <div class="col-md-12">
                         <span id="want-to-know-more" class="who-is-us"></span>
                         <?php 
                             $post_about = get_post( 34, ARRAY_A );
@@ -134,7 +134,7 @@ Template Name: Home
                 <h2>در همگرا برای تمام نیازهای تان راه حلی داریم !</h2>
 
                 <div class="row our-supports">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-3">
                         <div class="support-details">
                          <?php 
                             $thePostIdArray = array("67","70", "71", "72", "78", "81","83");
@@ -153,43 +153,43 @@ Template Name: Home
                         </div>
                     </div>
 
-                    <div class="col-md-9">
+                    <div class="col-md-9 col-sm-9">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6">
                                 <div class="hegsa" data-id="67">
                                     <?php echo get_the_title( 67 );?>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6">
                                 <div class="hegsa" data-id="70">
                                     <?php echo get_the_title( 70 ); ?>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-4">
                                 <div class="hegsa" data-id="71">
                                     <?php echo get_the_title( 71 ); ?>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-4">
                                 <div class="hegsa" data-id="72">
                                     <?php echo get_the_title( 72 ); ?>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-4">
                                 <div class="hegsa" data-id="78">
                                     <?php echo get_the_title( 78 ); ?>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6">
                                 <div class="hegsa" data-id="81">
                                     <?php echo get_the_title( 81 ); ?>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6">
                                 <div class="hegsa" data-id="83">
                                     <?php echo get_the_title( 83 ); ?>
                                 </div>
@@ -218,24 +218,6 @@ Template Name: Home
                     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                       <div class="container panel-body">
                         <?php echo $post_advantages['post_content']; ?>
-                        <!-- <ul>
-                            <li><strong>کیفیت:</strong>
-                                <span>با ما همگرا شوید تا به شما خدمات باکیفیت ارائه دهیم. هدف‌مان این است که راه رشد شما را کوتاه‌تر و هموارتر کنیم!</span>
-                            </li>
-                            <li><strong>حمایت بدون بازپرداخت :</strong>
-                                <span>بخش قابل توجهی از حمایت‌های ما بدون بازپرداخت است. رشد شما در پایان سالِ حمایتی‌تان برای ما حکم بازپرداخت را خواهد داشت. </span>
-                            </li>
-                            <li><strong>جامعیت:</strong>
-                                <span>تیم ما از بطن صنعت گیم متولد شده است. ما عمیقا نیازها و دغدغه‌های بازیسازان را لمس کرد‌ه‌ایم. همچنین، با ملاقات‌های مداوم با بازیسازان، نیازسنجی کاملی از دغدغه‌های فعالان صنعت بازی در ایران تهیه کرده‌ و برای رفع هرکدام حمایت‌هایی درنظر گرفته‌ایم. </span>
-                            </li>
-                            <li><strong>پشتیبانی: </strong>
-                                <span>دبیرخانه همگرا، از تیمی متمرکز، فعال، متخصص و مشتاق تشکیل شده که آماده‌ی همراهی با شما و پاسخگویی به سوالات‌تان است. شما در تعامل با این تیم با تجربه‌ی جدیدی از همراهی روبه‌رو خواهید شد. </span>
-                            </li>
-                            <li><strong>امنیت: </strong>
-                                <span>همگرا زیرمجموعه‌ی متولی صنعت بازی، بنیاد ملی بازی‌های رایانه‌ای، است، با ما اطلاعات ثبت‌نام و حقوقی شما ایمن خواهد بود.</span>
-                            </li>
-                        </ul>-->
-
                       </div>
                     </div>
                 </div>
@@ -250,14 +232,14 @@ Template Name: Home
                         <h2>همکاران تجاری</h2>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4 motion-capture">
+                <div class="row no-margin">
+                    <div class="col-md-4 col-sm-4 motion-capture">
                         <h3>تست بازی</h3>
                     </div>
-                    <div class="col-md-4 infrastructure-equipment">
+                    <div class="col-md-4 col-sm-4 infrastructure-equipment">
                         <h3>استدیو صدا</h3>
                     </div>
-                    <div class="col-md-4 sounding">
+                    <div class="col-md-4 col-sm-4 sounding">
                         <h3>مشاوره حقوقی</h3>
                     </div>
                 </div>
@@ -334,18 +316,18 @@ Template Name: Home
                 </div>
             </div>
 
-            <!-- <div class="gif-view">
+            <div class="gif-view">
                 <div class="container">
                     <?php $gif_url =  get_post_custom(102);?>
                     <img src="<?php echo $gif_url['wpcf-video-capture'][0]; ?>" alt="مراحل ثبت نام">
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/git-icon.png" alt="مراحل ثبت نام">
+                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/library/images/git-icon.png" alt="مراحل ثبت نام"> -->
                 </div>
             </div>
             
             <div class="video-register">
-                <div class="container">
+               <!--  <div class="container">
                     <img src="<?php echo get_template_directory_uri(); ?>/library/images/video.png" alt="">
-                </div>
+                </div> -->
             
                 <?php 
                     $video_post         = get_post( 97, ARRAY_A );
@@ -368,23 +350,23 @@ Template Name: Home
                     </div>
                   </div>
                 </div>
-            </div> -->
+            </div>
 
             <div class="container">
                 <div class="row last-row">
-                    <div class="col-md-4 icon-1">
+                    <div class="col-md-4 col-sm-6 icon-1">
                         <a href="https://portal.ircg.ir/IRCGAssets/Pages/ShowForm?pid=4407" title="می خواهم تیمم را ثبت نام کنم">
                             <!-- <span class="icon"></span> -->
                             <span>می خواهم تیمم را ثبت نام کنم</span>
                         </a>
                     </div>
-                    <div class="col-md-4 icon-2">
+                    <div class="col-md-4 col-sm-6 icon-2">
                         <a href="https://portal.ircg.ir/IRCGAssets/Pages/ShowForm?pid=4395" title="می خواهم شرکتم را ثبت نام کنم">
                             <!-- <span class="icon"></span> -->
                             <span>می خواهم شرکتم را ثبت نام کنم</span>
                         </a>
                     </div>
-                    <div class="col-md-4 icon-3">
+                    <div class="col-md-4  icon-3">
                         <a href="https://portal.ircg.ir/IRCGAssets/Pages/ShowForm?pid=4432" title="می خواهم حامی تجاری شوم">
                             <!-- <span class="icon"></span> -->
                             <span>می خواهم حامی تجاری شوم</span>
@@ -396,7 +378,7 @@ Template Name: Home
 
         <section class="section faq" id="faq">
             <div class="container">
-                <div class="row">
+                <div class="row no-margin">
                     <div class="col-sm-12">
                         <span class="icon-faq"></span>
                         <h2>هنوز سوال دارم</h2>
@@ -413,7 +395,7 @@ Template Name: Home
 
                     $faq_posts  = get_posts( $args );
                 ?>
-                <div class="row no-margin">
+                <div class="row no-margin tab-collection">
 
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">
@@ -440,7 +422,7 @@ Template Name: Home
             </div>
         </section>
 
-        <!-- <section class="section media" id="media">
+        <section class="section media" id="media">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 top-row">
@@ -518,7 +500,7 @@ Template Name: Home
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
     </main>
 
 
