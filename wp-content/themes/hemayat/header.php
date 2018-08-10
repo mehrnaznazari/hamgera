@@ -95,5 +95,38 @@
 						)); ?>
 					</div>
 
+
+					<div class="mobile-meun">
+						<div class="navbar-header navbar-default">
+						    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" >
+						        <span class="sr-only">Toggle navigation</span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						      </button>
+						</div>
+
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      						<?php wp_nav_menu(array(
+						         'container' => false,                            // remove nav container
+						         'container_class' => 'menu',          // class of container (should you choose to use it)
+						         'menu' => __( 'The Main Menu', 'bonestheme' ),   // nav name
+						         'menu_class' => 'nav navbar-nav',                      // adding custom nav class
+						         'theme_location' => 'main-nav',                  // where it's located in the theme
+						         'before' => '',                                  // before the menu
+	    			               'after' => '',                                 // after the menu
+	    			               'link_before' => '<span>',  // before each link
+	    			               'link_after' => '</span>',                     // after each link
+	    			               'depth' => 0,                                  // limit the depth of the nav
+						         'fallback_cb' => ''                              // fallback function (if there is one)
+							)); ?>
+      					</div>
+
+<!-- data-toggle="collapse" data-target=".navbar-collapse.show" -->
+
+	                    
+					</div>
+
+
 				</div>
 			</header>

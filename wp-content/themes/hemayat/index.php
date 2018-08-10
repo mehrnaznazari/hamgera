@@ -398,14 +398,16 @@ Template Name: Home
                 <div class="row no-margin tab-collection">
 
                     <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">
-                        <?php 
-                        foreach ($faq_posts as $key => $faq_post) : ?>
+                    <div class="overflow">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <?php 
+                            foreach ($faq_posts as $key => $faq_post) : ?>
 
-                            <li role="presentation"><a href="#faq_<?= $key; ?>" aria-controls="faq_<?= $key; ?>" role="tab" data-toggle="tab"><?= $faq_post->post_title ?></a></li>
+                                <li role="presentation"><a href="#faq_<?= $key; ?>" aria-controls="faq_<?= $key; ?>" role="tab" data-toggle="tab"><?= $faq_post->post_title ?></a></li>
 
-                        <?php endforeach ?> 
-                    </ul>
+                            <?php endforeach ?> 
+                        </ul>
+                    </div>
 
                     <!-- Tab panes -->
                     <div class="tab-content">
