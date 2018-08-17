@@ -204,56 +204,5 @@ jQuery(document).ready(function($){
   
   }
 
-/****************************************************************************************************/
-
-  /********** Game Page Size  **********/
-   /*   var height_size = function () {
-        if ($(window).width() > 950) {
-          $("#inner-game-page").css('height' , $(window).height());
-        }else{
-          $("#inner-game-page").css('height' , 'auto');
-        }
-      }
-      height_size();
-
-      function debounce(func, wait, immediate) {
-        var timeout;
-        return function() {
-          var context = this,
-            args = arguments;
-          var later = function() {
-            timeout = null;
-            if (!immediate) {
-              func.apply(context, args);
-            }
-          };
-          var callNow = immediate && !timeout;
-          clearTimeout(timeout);
-          timeout = setTimeout(later, wait);
-          if (callNow) {
-            func.apply(context, args);
-          }
-        };
-      };
-
-      $(window).resize(debounce(function() {
-        
-        height_size();
-        check_device();
-
-        if ( $('body').hasClass('home') && 
-          ( (mobile_device && (window.innerWidth >= 1024))   || (!mobile_device && (window.innerWidth > 824)) ) ) {
-                $.scrollify.enable();
-        }else{
-                $.scrollify.disable();$.scrollify.update();
-
-        }
-
-      }, 50));
-
-      $(window).trigger('resize');*/
-
-  /********** End Game Page Size  **********/
-
 
 });

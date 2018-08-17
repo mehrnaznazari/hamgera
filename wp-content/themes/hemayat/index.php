@@ -76,7 +76,7 @@ Template Name: Home
                     <div class="col-md-6 col-r">
                         <div class="bg-title">
                             <div class="mission">
-                                <h2>هـــدف <h2>
+                                <h3>هـــدف <h3>
                             </div>
                         </div>
                         <div>
@@ -90,7 +90,7 @@ Template Name: Home
                     <div class="col-md-6 col-l">
                         <div class="bg-title">
                             <div class="vision">
-                                <h2>چشم‌انداز</h2>
+                                <h3>چشم‌انداز</h3>
                             </div>
                         </div>
                         <div>
@@ -122,6 +122,10 @@ Template Name: Home
                             if ($video_id) { ?>
                                 <div class="h_iframe-aparat_embed_frame"> <span style="display: block;padding-top: 56%"></span><iframe src="https://www.aparat.com/video/video/embed/videohash/<?php echo $video_id ?>/vt/frame" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" ></iframe></div>
                         <?php } ?>
+                        <div class="sumry">
+                            <p>برای مشاهده ویدئو با کیفیت بالا، هنگام نمایش فیلم از نوار پایین سمت راست، روی چرخ‌دنده بزنید و گزینه 720p را انتخاب کنید.</p>
+                            <p><a href="http://hamgara.org/video/ویدئوی-معرفی-ساختار-حمایتی-همگرا.mp4" title="">برای دانلود ویدئوی معرفی ساختار حمایتی همگرا، اینجا را کلیک کنید</a></p>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -134,66 +138,99 @@ Template Name: Home
                 <h2>در همگرا برای تمام نیازهای تان راه حلی داریم !</h2>
 
                 <div class="row our-supports">
-                    <div class="col-md-3 col-sm-3">
-                        <div class="support-details">
-                         <?php 
-                            $thePostIdArray = array("67","70", "71", "72", "78", "81","83");
-                            $limit = 7; $counter = 0;
-                            if (have_posts()) : 
-                                foreach ($thePostIdArray as $id) { ?>
-                                    <div id="post-<?= $id; ?>">
-                                     <?php
-                                        $queried_post = get_post($id);
-                                        echo $queried_post->post_content;
-                                     ?>
+                    <div class="desktop">
+                        <div class="col-md-3 col-sm-3">
+                            <div class="support-details">
+                             <?php 
+                                $thePostIdArray = array("67","70", "71", "72", "78", "81","83");
+                                $limit = 7; $counter = 0;
+                                if (have_posts()) : 
+                                    foreach ($thePostIdArray as $id) { ?>
+                                        <div id="post-<?= $id; ?>">
+                                         <?php
+                                            $queried_post = get_post($id);
+                                        ?>
+                                            <strong><?php echo $queried_post->post_title; ?></strong>
+                                            <?php echo $queried_post->post_content; ?>
+                                        </div>
+                                    <?php  } 
+                                endif;
+                             ?>
+                            </div>
+                        </div>
+
+                        <div class="col-md-9 col-sm-9">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="hegsa" data-id="67">
+                                        <?php echo get_the_title( 67 );?>
                                     </div>
-                                <?php  } 
-                            endif;
-                         ?>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="hegsa" data-id="70">
+                                        <?php echo get_the_title( 70 ); ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="hegsa" data-id="71">
+                                        <?php echo get_the_title( 71 ); ?>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="hegsa" data-id="72">
+                                        <?php echo get_the_title( 72 ); ?>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="hegsa" data-id="78">
+                                        <?php echo get_the_title( 78 ); ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="hegsa" data-id="81">
+                                        <?php echo get_the_title( 81 ); ?>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="hegsa" data-id="83">
+                                        <?php echo get_the_title( 83 ); ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-md-9 col-sm-9">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="hegsa" data-id="67">
-                                    <?php echo get_the_title( 67 );?>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="hegsa" data-id="70">
-                                    <?php echo get_the_title( 70 ); ?>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-sm-4">
-                                <div class="hegsa" data-id="71">
-                                    <?php echo get_the_title( 71 ); ?>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <div class="hegsa" data-id="72">
-                                    <?php echo get_the_title( 72 ); ?>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <div class="hegsa" data-id="78">
-                                    <?php echo get_the_title( 78 ); ?>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="hegsa" data-id="81">
-                                    <?php echo get_the_title( 81 ); ?>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="hegsa" data-id="83">
-                                    <?php echo get_the_title( 83 ); ?>
-                                </div>
-                            </div>
+                    <div class="mobile">
+                        <div class="panel-group get-support" id="m-services" role="tablist" aria-multiselectable="true">
+                            <?php 
+                                $thePostIdArray = array("67","70", "71", "72", "78", "81","83");
+                                $limit = 7; $counter = 0;
+                                if (have_posts()) : 
+                                    foreach ($thePostIdArray as $id) { 
+                                        $queried_post = get_post($id); ?>
+                                        <div class="panel panel-converge">
+                                            <div class="panel-heading" role="tab" id="head-<?= $id; ?>">
+                                                <h4 class="container panel-title">
+                                                    <a role="button" class="collapsed" data-toggle="collapse" data-parent="#m-services" href="#collapse-<?= $id; ?>" aria-expanded="false" aria-controls="collapse-<?= $id; ?>">
+                                                        <span class="arrow"></span>
+                                                        <?php echo $queried_post->post_title; ?>
+                                                    </a>
+                                                </h4>
+                                            </div>
+
+                                            <div id="collapse-<?= $id; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="head-<?= $id; ?>">
+                                                <div class="container panel-body">
+                                                    <?php echo $queried_post->post_content; ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php  } 
+                                endif;
+                             ?>
                         </div>
                     </div>
                 </div>
@@ -233,14 +270,17 @@ Template Name: Home
                     </div>
                 </div>
                 <div class="row no-margin">
-                    <div class="col-md-4 col-sm-4 motion-capture">
+                    <div class="col-md-3 col-sm-3 motion-capture">
                         <h3>تست بازی</h3>
                     </div>
-                    <div class="col-md-4 col-sm-4 infrastructure-equipment">
+                    <div class="col-md-3 col-sm-3 infrastructure-equipment">
                         <h3>استدیو صدا</h3>
                     </div>
-                    <div class="col-md-4 col-sm-4 sounding">
+                    <div class="col-md-3 col-sm-3 sounding">
                         <h3>مشاوره حقوقی</h3>
+                    </div>
+                    <div class="col-md-3 col-sm-3 studio">
+                        <h3>آموزش</h3>
                     </div>
                 </div>
                 <div class="owl-carousel owl-theme partner-slider">
@@ -278,7 +318,7 @@ Template Name: Home
                 <div class="panel panel-converge">
                     <div class="panel-heading" role="tab" id="headingTwo">
                         <h4 class="container panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#register" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <a role="button" class="collapsed" data-toggle="collapse" data-parent="#register" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 <span class="arrow"></span>
                                 <?php 
                                     $post_support_1 = get_post( 42, ARRAY_A );
@@ -298,7 +338,7 @@ Template Name: Home
                 <div class="panel panel-converge">
                     <div class="panel-heading" role="tab" id="headingThree">
                         <h4 class="container panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#register" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <a role="button" class="collapsed" data-toggle="collapse" data-parent="#register" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 <span class="arrow"></span>
                                 <?php 
                                     $post_support_2 = get_post( 44, ARRAY_A );
@@ -316,19 +356,14 @@ Template Name: Home
                 </div>
             </div>
 
-            <div class="gif-view">
+            <!-- <div class="gif-view">
                 <div class="container">
                     <?php $gif_url =  get_post_custom(102);?>
                     <img src="<?php echo $gif_url['wpcf-video-capture'][0]; ?>" alt="مراحل ثبت نام">
-                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/library/images/git-icon.png" alt="مراحل ثبت نام"> -->
                 </div>
-            </div>
+            </div> -->
             
-            <div class="video-register">
-               <!--  <div class="container">
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/video.png" alt="">
-                </div> -->
-            
+            <div class="video-register">            
                 <?php 
                     $video_post         = get_post( 97, ARRAY_A );
                     $video_meta         = get_post_custom(97);
@@ -347,6 +382,10 @@ Template Name: Home
                             if ($video_id) { ?>
                                 <div class="h_iframe-aparat_embed_frame"> <span style="display: block;padding-top: 56%"></span><iframe src="https://www.aparat.com/video/video/embed/videohash/<?php echo $video_id ?>/vt/frame" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" ></iframe></div>
                         <?php } ?>
+                        <div class="sumry">
+                            <p>برای مشاهده ویدئو با کیفیت بالا، هنگام نمایش فیلم از نوار پایین سمت راست، روی چرخ‌دنده بزنید و گزینه 720p را انتخاب کنید.</p>
+                            <p><a href="http://hamgara.org/video/sait-05.mp4" title="">برای دانلود  ویدئوی آموزشی نحوه ثبت نام در پورتال، اینجا را کلیک کنید</a></p>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -355,13 +394,13 @@ Template Name: Home
             <div class="container">
                 <div class="row last-row">
                     <div class="col-md-4 col-sm-6 icon-1">
-                        <a href="https://portal.ircg.ir/IRCGAssets/Pages/ShowForm?pid=4407" title="می خواهم تیمم را ثبت نام کنم">
+                        <a href="https://portal.ircg.ir/IRCGAssets/Pages/ShowForm?pid=4446" title="می خواهم تیمم را ثبت نام کنم">
                             <!-- <span class="icon"></span> -->
                             <span>می خواهم تیمم را ثبت نام کنم</span>
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-6 icon-2">
-                        <a href="https://portal.ircg.ir/IRCGAssets/Pages/ShowForm?pid=4395" title="می خواهم شرکتم را ثبت نام کنم">
+                        <a href="https://portal.ircg.ir/IRCGAssets/Pages/ShowForm?pid=4435" title="می خواهم شرکتم را ثبت نام کنم">
                             <!-- <span class="icon"></span> -->
                             <span>می خواهم شرکتم را ثبت نام کنم</span>
                         </a>
@@ -424,7 +463,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section class="section media" id="media">
+        <!-- <section class="section media" id="media">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 top-row">
@@ -469,7 +508,7 @@ Template Name: Home
                 <div class="row">
                     <div class="col-md-12 middle-row">
                         <span class="icon-bg"></span>
-                        <h2> رسانه ها در باره ما چه می گویند</h2>
+                        <h2> رسانه ها درباره ما چه می گویند</h2>
                     </div>
                 </div>
             </div>
@@ -502,7 +541,7 @@ Template Name: Home
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
 

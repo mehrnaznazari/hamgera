@@ -15,21 +15,21 @@
 
 
 		<meta property="og:type" content="game">
-		<!-- <meta property="og:title" content="Medrick Official Website">
-		<meta property="og:description" content="Medrick is a video game publisher and development company founded with the intention of developing and publishing AAA mobile and PC games in the MENA region. Medrick currently is one of the biggest publishers and developers of the region.">
+		<meta property="og:title" content="همگرا  - حمایت همسو با نیازهای بازی سازان">
+		<meta property="og:description" content="ساختار حمایتی همگرا در سال 1396 متولد شد تا حمایت‌های بنیاد ملی بازی‌های رایانه‌ای در حوزه‌های مختلف صنعت بازی را همگرا کند! ما در همگرا با تجربه‌ای طولانی، شما را در مسیر موفقیت همراهی کرده و آنچه را برای رشد احتیاج دارید، در اختیارتان قرار می‌دهیم.">
 		<meta property="og:url" content="<?php the_permalink(); ?>">
-		<meta property="og:site_name" content="Medrick Game Studio">
+		<meta property="og:site_name" content="همگرا  - حمایت همسو با نیازهای بازی سازان">
 		<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/library/images/logo.png">
 		
-		<meta name="description" content="Medrick is a video game publisher and development company founded with the intention of developing and publishing AAA mobile and PC games in the MENA region. Medrick currently is one of the biggest publishers and developers of the region.">
-		<meta name="author" content="Medrick Game Studio">
+		<meta name="description" content="ساختار حمایتی همگرا در سال 1396 متولد شد تا حمایت‌های بنیاد ملی بازی‌های رایانه‌ای در حوزه‌های مختلف صنعت بازی را همگرا کند! ما در همگرا با تجربه‌ای طولانی، شما را در مسیر موفقیت همراهی کرده و آنچه را برای رشد احتیاج دارید، در اختیارتان قرار می‌دهیم.">
+		<meta name="author" content="همگرا  - حمایت همسو با نیازهای بازی سازان">
 		
-		<meta name="twitter:card" content="Medrick Studio">
+		<meta name="twitter:card" content="همگرا  - حمایت همسو با نیازهای بازی سازان">
 		<meta name="twitter:site" content="<?php the_permalink(); ?>">
-		<meta name="twitter:title" content="Medrick Official Website">
-		<meta name="twitter:description" content="Medrick is a video game publisher and development company founded with the intention of developing and publishing AAA mobile and PC games in the MENA region.">
+		<meta name="twitter:title" content="همگرا  - حمایت همسو با نیازهای بازی سازان">
+		<meta name="twitter:description" content="هدف اصلی ساختار حمایتی همگرا، همگرا کردن حمایت‌هایی است که در بنیاد ملی بازی‎‌های رایانه‌ای به بازیسازان ارائه می‌کنیم تا با متنوع‌ترین خدمات، صنعت بازی ایران را توانمند کنیم.">
 		<meta name="twitter:image" content="<?php echo get_template_directory_uri(); ?>/library/images/logo.png">
-		<meta name="twitter:creator" content="Medrick Studio"> -->
+		<meta name="twitter:creator" content="همگرا  - حمایت همسو با نیازهای بازی سازان">
 
 		<link rel="canonical" href="<?php the_permalink(); ?>" />
 
