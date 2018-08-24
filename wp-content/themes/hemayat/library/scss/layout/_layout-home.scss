@@ -1458,6 +1458,7 @@ header{
   }
   .row.tab-collection{
     height: 624px;
+    position: relative;
   }
   @media screen and (min-width: 1200px) and (max-width: 1229px) {
     .container{
@@ -1496,6 +1497,28 @@ header{
             &>a{
               font-size: 24px;
               margin-left: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 720px){
+    .container{
+      .overflow{
+        .nav{
+          &.nav-tabs{
+            &:after{
+              background-image: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(34, 154, 121,1)),color-stop(100%,rgba(34, 154, 121,0)));
+              background-image: -webkit-linear-gradient(left,rgba(34, 154, 121,1),rgba(34, 154, 121,0));
+              background: linear-gradient(to right,rgba(34, 154, 121,1),rgba(34, 154, 121,0));
+              filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#ff229a79',EndColorStr='#00229a79');
+              position: absolute;
+              content: ' ';
+              left: 0;
+              height: 94px;
+              width: 40px;
             }
           }
         }
@@ -1551,14 +1574,19 @@ header{
         }
       }
       .overflow{
-        .nav.nav-tabs{
-          height: 80px;
-          li{
-            text-align: center;
-            width: 136px;
-            a{
-              font-size: 21px;
-              line-height: 5rem;
+        .nav{
+          &.nav-tabs{
+            height: 80px;
+            li{
+              text-align: center;
+              width: 136px;
+              a{
+                font-size: 21px;
+                line-height: 5rem;
+              }
+            }
+            &:after{
+              height: 80px;
             }
           }
         }
@@ -1825,6 +1853,7 @@ header{
 footer{
   background-color:$navy-blue;
   padding: 65px 0 70px 0;
+  position: relative;
   p{
     color: $gray-light;
     margin-bottom: 20px;
@@ -1837,11 +1866,36 @@ footer{
       font-size: 16px;
     }
   }
+  .bonyad{
+    display: none;
+    text-align:center;
+  }
   @media screen and (max-width: 767px){
     padding: 55px 0;
     p{
       margin-bottom: 12px;
       font-size: 14px;
+    }
+    .bonyad{
+      display: block;
+      margin-top: 10px;
+      img{
+        width: 155px;
+      }
+    }
+  }
+  @media screen and (max-width: 413px){
+    padding: 55px 0;
+    p{
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+    .bonyad{
+      display: block;
+      margin-top: 10px;
+      img{
+        width: 125px;
+      }
     }
   }
 }
@@ -1867,9 +1921,15 @@ footer{
     }
   }
   @media screen and (max-width: 767px){
-    .modal-dialog {
+    .modal-dialog { 
       max-width: 100%;
-      width: auto;
+      width:calc(100% - 19px);
+      //width: auto;
+      .sumry{
+        p{
+          display: none;
+        }
+      }
     }
   }
 }

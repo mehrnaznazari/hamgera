@@ -8,7 +8,7 @@ Template Name: Home
 <div id="content" class="container-fluid">
     <main id="main">
 
-        <section class="section main-slider"  id="home">
+        <section class="section main-slider" id="home">
             <div class="inner-content container">
                 <?php
                     $args = array(
@@ -52,7 +52,7 @@ Template Name: Home
                         <a href="#want-to-know-more" title=""><span>می‌خواهم بیشتر بدانم</span></a>
                     </div>
                     <div class="col-md-6 btn-about">
-                        <a href="#getSupport" title=""><span>می‌خواهم با حامی همکاری کنم</span></a>
+                        <a href="#sponsor" title=""><span>می‌خواهم با حامی همکاری کنم</span></a>
                     </div>
                 </div>
                 <div class="row">
@@ -124,7 +124,7 @@ Template Name: Home
                         <?php } ?>
                         <div class="sumry">
                             <p>برای مشاهده ویدئو با کیفیت بالا، هنگام نمایش فیلم از نوار پایین سمت راست، روی چرخ‌دنده بزنید و گزینه 720p را انتخاب کنید.</p>
-                            <p><a href="http://hamgara.org/video/ویدئوی-معرفی-ساختار-حمایتی-همگرا.mp4" title="">برای دانلود ویدئوی معرفی ساختار حمایتی همگرا، اینجا را کلیک کنید</a></p>
+                            <a href="http://hamgara.org/video/ویدئوی-معرفی-ساختار-حمایتی-همگرا.mp4" title="">برای دانلود ویدئوی معرفی ساختار حمایتی همگرا، اینجا را کلیک کنید</a>
                         </div>
                     </div>
                   </div>
@@ -261,7 +261,7 @@ Template Name: Home
             </div>
         </section>
 
-        <section class="section partners" id="partners">
+        <!-- <section class="section partners" id="partners">
             <div class="container">
                 <div class="row no-margin">
                     <div class="icon col-sm-12">
@@ -311,7 +311,7 @@ Template Name: Home
                         ?>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="section get-support" id="getSupport">
             <div class="panel-group" id="register" role="tablist" aria-multiselectable="true">
@@ -384,7 +384,7 @@ Template Name: Home
                         <?php } ?>
                         <div class="sumry">
                             <p>برای مشاهده ویدئو با کیفیت بالا، هنگام نمایش فیلم از نوار پایین سمت راست، روی چرخ‌دنده بزنید و گزینه 720p را انتخاب کنید.</p>
-                            <p><a href="http://hamgara.org/video/sait-05.mp4" title="">برای دانلود  ویدئوی آموزشی نحوه ثبت نام در پورتال، اینجا را کلیک کنید</a></p>
+                            <a href="http://hamgara.org/video/sait-05.mp4" title="">برای دانلود  ویدئوی آموزشی نحوه ثبت نام در پورتال، اینجا را کلیک کنید</a>
                         </div>
                     </div>
                   </div>
@@ -405,7 +405,7 @@ Template Name: Home
                             <span>می خواهم شرکتم را ثبت نام کنم</span>
                         </a>
                     </div>
-                    <div class="col-md-4  icon-3">
+                    <div class="col-md-4 icon-3" id="sponsor">
                         <a href="https://portal.ircg.ir/IRCGAssets/Pages/ShowForm?pid=4432" title="می خواهم حامی تجاری شوم">
                             <!-- <span class="icon"></span> -->
                             <span>می خواهم حامی تجاری شوم</span>

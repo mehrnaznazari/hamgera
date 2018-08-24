@@ -1,11 +1,15 @@
 			<footer class="footer">
-
+					
 				<div id="inner-footer" class="container">
 					<p>ساختار حمایتی همگرا </p>
                     <p>معاونت حمایت بنیاد ملی بازی‌های رایانه‌ای</p>
                     <p>تلفن: ۹۸۲۱۸۸۳۱۰۲۲۲+   &nbsp; &nbsp;ایمیل: <a href="mailto:contact@hamgara.org?subject=feedback" "تماس با ما">contact@hamgara.org</a></p>
                     <p>سازماندهی شده توسط Ast Creative Studio</p>
 					<!-- <p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p> -->
+
+					<div class="bonyad">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo-bonyad.png" alt="بنیاد">
+					</div>
 				</div>
 
 			</footer>
@@ -22,9 +26,11 @@
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/library/css/jquery.mCustomScrollbar.css"/>
         <script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.mCustomScrollbar.concat.min.js"></script>
         
-        <script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.nav.js"></script>
+        <!-- <script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.nav.js"></script> -->
+        <!-- <script src="<?php echo get_template_directory_uri(); ?>/library/js/jq.nav-scroll-spy.js"></script> -->
+        <script src="<?php echo get_template_directory_uri(); ?>/library/js/navbar-fixed.js"></script>
         
-    	<script src="<?php echo get_template_directory_uri(); ?>/library/js/app.js"></script>
+    	<script src="<?php echo get_template_directory_uri(); ?>/library/js/app.js?v-1"></script>
 
 	</body>
 

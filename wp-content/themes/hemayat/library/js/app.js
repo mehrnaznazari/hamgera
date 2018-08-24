@@ -9,49 +9,6 @@ jQuery(document).ready(function($){
   }
   check_device();
 
-/*     $.scrollify({
-      section:".section",
-      sectionName : "section-name",
-      interstitialSection:".header,.main-slider,.media,.footer",
-      easing: "swing",
-      scrollSpeed: 1100,
-      offset : -88,
-      scrollbars: false,
-      standardScrollElements: "",
-      setHeights: true,
-      overflowScroll: true,
-      updateHash: true,
-      touchScroll:true,
-      before:function(i,panels) {
-        var ref = panels[i].attr("data-section-name");
-        $(".nav-menu .active").removeClass("active");
-
-        var $target = $(".nav-menu").find("a[href*=\"#" + ref + "\"]");
-            $target.addClass("active");
-            $target.parent().addClass("active");
-
-        if((i != 0) && (i != 1)) {
-          $("header.header").addClass("fixed-menu");
-          $.scrollify.update();
-        }else{
-          $("header.header").removeClass("fixed-menu");
-        }
-         console.log("1"); 
-      },
-      afterRender:function() {
-        $(".nav-menu a").on("click",function() {
-          $.scrollify.move(this.hash);
-        });      
-
-        $.scrollify.update();
-         console.log("3");
-      },
-      afterResize: function () {
-        var current = $.scrollify.current().attr('data-section-name');
-        $.scrollify.move('#'+current);
-      }
-    });*/
-
   if ($('body').hasClass('home')) {
 
     /********** Main slider **********/
@@ -143,10 +100,11 @@ jQuery(document).ready(function($){
 
     /********** Navigation Menu  **********/
 
+    if ($(window).width() > 768) {
+      
       var nav     = $('header.header');
       var top_pos = $('.navigation').offset().top;
 
-      //console.log('navigation' , $('.navigation').offset().top  );
 
       $(window).scroll(function () {
         if ($(this).scrollTop() > top_pos -15) {
@@ -155,6 +113,15 @@ jQuery(document).ready(function($){
           nav.removeClass("fixed-menu");
         }
       });
+
+    }else{
+      $('header.header').addClass("fixed-menu");
+    }
+
+
+    $(".mobile-meun .navbar-collapse a").click(function(event) {
+        $(".navbar-collapse").collapse('hide');
+    });
 
       /*$('#inner-header .navigation a').on('click' , function (e) {
           $("#inner-header .navigation li").removeClass("active");
@@ -169,7 +136,7 @@ jQuery(document).ready(function($){
 
 
 
-      $('.navigation .nav-menu , .btn-about a').onePageNav({
+      /*$('.navigation .nav-menu , .btn-about a').onePageNav({
           currentClass: 'current',
           changeHash: false,
           scrollSpeed: 750,
@@ -186,7 +153,8 @@ jQuery(document).ready(function($){
             console.log($currentListItem);  
             //I get fired when you enter a section and I pass the list item of the section
           }
-      });
+      });*/
+
     /********** End Navigation Menu **********/
 
       $('.faq .nav-tabs a[href="#faq_0"]').tab('show') ;
