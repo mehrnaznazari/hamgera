@@ -356,12 +356,12 @@ Template Name: Home
                 </div>
             </div>
 
-            <!-- <div class="gif-view">
+            <div class="gif-view">
                 <div class="container">
                     <?php $gif_url =  get_post_custom(102);?>
                     <img src="<?php echo $gif_url['wpcf-video-capture'][0]; ?>" alt="مراحل ثبت نام">
                 </div>
-            </div> -->
+            </div>
             
             <div class="video-register">            
                 <?php 

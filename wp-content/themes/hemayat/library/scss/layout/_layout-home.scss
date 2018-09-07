@@ -469,6 +469,7 @@ header{
       padding: 0;
       img{
         width:100%;
+        cursor:pointer;
       }
     }
   }
@@ -1123,14 +1124,17 @@ header{
 
   .gif-view{
     background-color: $red-bg;
-    height:499px;
+    //height:499px;
+    height:auto;
     img{
+      vertical-align: middle;
       width:100%;
     }
   }
   .video-register{
     padding: 100px 0 0px 0;
     img{
+      cursor:pointer;
       width:100%;
     }
   }
@@ -1185,12 +1189,12 @@ header{
   }
   @media screen and (min-width: 1200px) and (max-width: 1229px){
     .gif-view{
-      height:460px;
+      //height:460px;
     }
   }
   @media screen and (min-width: 992px) and (max-width: 1199px) {
     .gif-view{
-      height:436px;
+      //height:436px;
     }
     .last-row{
       margin: 60px 0 50px 0;
@@ -1215,7 +1219,7 @@ header{
   }
   @media screen and (min-width: 768px) and (max-width: 991px) {
     .gif-view{
-      height:337px;
+      //height:337px;
     }
     .video-register{
       padding-top: 45px;

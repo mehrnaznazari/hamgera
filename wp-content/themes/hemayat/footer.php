@@ -30,7 +30,7 @@
         <!-- <script src="<?php echo get_template_directory_uri(); ?>/library/js/jq.nav-scroll-spy.js"></script> -->
         <script src="<?php echo get_template_directory_uri(); ?>/library/js/navbar-fixed.js"></script>
         
-    	<script src="<?php echo get_template_directory_uri(); ?>/library/js/app.js?v-1"></script>
+    	<script src="<?php echo get_template_directory_uri(); ?>/library/js/app.js"></script>
 
 	</body>
 
