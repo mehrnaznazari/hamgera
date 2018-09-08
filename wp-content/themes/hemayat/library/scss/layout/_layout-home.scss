@@ -1123,12 +1123,14 @@ header{
   }
 
   .gif-view{
-    background-color: $red-bg;
+    //background-color: $red-bg;
+    background-color: #250e35;
+    text-align: center;
     //height:499px;
     height:auto;
     img{
       vertical-align: middle;
-      width:100%;
+      // width:100%;
     }
   }
   .video-register{
@@ -1190,11 +1192,17 @@ header{
   @media screen and (min-width: 1200px) and (max-width: 1229px){
     .gif-view{
       //height:460px;
+      img{
+        width: 100%;
+      }
     }
   }
   @media screen and (min-width: 992px) and (max-width: 1199px) {
     .gif-view{
       //height:436px;
+      img{
+        width: 100%;
+      }
     }
     .last-row{
       margin: 60px 0 50px 0;
@@ -1220,6 +1228,9 @@ header{
   @media screen and (min-width: 768px) and (max-width: 991px) {
     .gif-view{
       //height:337px;
+      img{
+        width: 100%;
+      }
     }
     .video-register{
       padding-top: 45px;
@@ -1272,6 +1283,9 @@ header{
     .gif-view{
       background-color: transparent;
       height:auto;
+      img{
+        width: 100%;
+      }
     }
     .video-register{
       padding-top: 35px;

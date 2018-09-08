@@ -4,7 +4,7 @@
 					<p>ساختار حمایتی همگرا </p>
                     <p>معاونت حمایت بنیاد ملی بازی‌های رایانه‌ای</p>
                     <p>تلفن: ۹۸۲۱۸۸۳۱۰۲۲۲+   &nbsp; &nbsp;ایمیل: <a href="mailto:contact@hamgara.org?subject=feedback" "تماس با ما">contact@hamgara.org</a></p>
-                    <p>سازماندهی شده توسط Ast Creative Studio</p>
+                    <p>سازماندهی شده توسط <a href="http://astcreativestudio.com" target="_blank">Ast Creative Studio</a></p>
 					<!-- <p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p> -->
 
 					<div class="bonyad">

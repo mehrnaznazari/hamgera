@@ -237,7 +237,7 @@ Template Name: Home
             </div>
         </section>
 
-         <section class="section our-advantages" id="advantages">
+        <section class="section our-advantages" id="advantages">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-advantages">
                     <div class="panel-heading" role="tab" id="headingOne">
@@ -375,19 +375,19 @@ Template Name: Home
                 </div>
                 
                 <div class="modal modal-wide fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <?php 
-                            if ($video_id) { ?>
-                                <div class="h_iframe-aparat_embed_frame"> <span style="display: block;padding-top: 56%"></span><iframe src="https://www.aparat.com/video/video/embed/videohash/<?php echo $video_id ?>/vt/frame" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" ></iframe></div>
-                        <?php } ?>
-                        <div class="sumry">
-                            <p>برای مشاهده ویدئو با کیفیت بالا، هنگام نمایش فیلم از نوار پایین سمت راست، روی چرخ‌دنده بزنید و گزینه 720p را انتخاب کنید.</p>
-                            <a href="http://hamgara.org/video/sait-05.mp4" title="">برای دانلود  ویدئوی آموزشی نحوه ثبت نام در پورتال، اینجا را کلیک کنید</a>
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <?php 
+                                if ($video_id) { ?>
+                                    <div class="h_iframe-aparat_embed_frame"> <span style="display: block;padding-top: 56%"></span><iframe src="https://www.aparat.com/video/video/embed/videohash/<?php echo $video_id ?>/vt/frame" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" ></iframe></div>
+                            <?php } ?>
+                            <div class="sumry">
+                                <p>برای مشاهده ویدئو با کیفیت بالا، هنگام نمایش فیلم از نوار پایین سمت راست، روی چرخ‌دنده بزنید و گزینه 720p را انتخاب کنید.</p>
+                                <a href="http://hamgara.org/video/sait-05.mp4" title="">برای دانلود  ویدئوی آموزشی نحوه ثبت نام در پورتال، اینجا را کلیک کنید</a>
+                            </div>
                         </div>
                     </div>
-                  </div>
                 </div>
             </div>
 
