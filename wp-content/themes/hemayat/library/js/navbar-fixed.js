@@ -15,7 +15,7 @@ jQuery(function($){
     }
 
     //navHeight = 88
-    console.log(navHeight);
+    //console.log(navHeight);
 
     // click-trigger
     $('a[href*="#"]:not([href="#"])').click(function(event) {
@@ -110,7 +110,7 @@ jQuery(function($){
        */
       if (id) {
         nav.find('a').parent().removeClass('active');
-        nav.find('a[href="#' + id + '"]').parent().addClass('active');
+        nav.find('a[href*="#' + id + '"]').parent().addClass('active');
       }
     }
 

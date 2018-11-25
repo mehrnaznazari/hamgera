@@ -931,12 +931,29 @@ header{
       text-align: center;
       padding: 0;
       h3{
+        color:inherit;
         font-size: 36px;
         font-weight: 800;
         color:inherit;
       }
     }
-    .motion-capture{
+    .cat-slider{
+      padding: 0px 46px 0 46px;
+      .slide{
+        text-align: center;
+        h3{
+          line-height:1.125;
+          margin-bottom: 0;
+          font-weight: 800;
+          font-size: 36px;
+          color:inherit;
+        }
+      }
+      .owl-nav{
+        top: 28%;
+      }
+    }
+    /* .motion-capture{
       color:#fefb00;
     }
     .infrastructure-equipment{
@@ -947,7 +964,7 @@ header{
     }
     .studio{
       color:#0598ce;
-    }
+    } */
     .partner-slider{
       padding: 35px 46px 0 46px;
       height:270px;
@@ -960,7 +977,20 @@ header{
       }
     }
   }
-
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .container{
+      .cat-slider{
+        .slide{
+          h3{
+            font-size: 33px;
+          }
+        }
+        .owl-nav{
+          top: 16%;
+        }
+      }
+    }
+  }
   @media screen and (min-width: 768px) and (max-width: 991px) {
     .container{
       padding: 60px 0;
@@ -970,6 +1000,16 @@ header{
       .col-md-3{
         h3{
           font-size: 31px;
+        }
+      }
+      .cat-slider{
+        .slide{
+          h3{
+            font-size: 31px;
+          }
+        }
+        .owl-nav{
+          top: 18%;
         }
       }
     }
@@ -985,6 +1025,9 @@ header{
           }
         }
       }
+      .cat-slider{
+        padding: 0px 60px 0 60px;
+      }
     }
   }
   @media screen and (max-width: 767px){
@@ -998,6 +1041,17 @@ header{
         padding: 0;
         h3{
           font-size: 30px;
+        }
+      }
+      .cat-slider{
+        padding: 0px 65px 0 65px;
+        .slide{
+          h3{
+            font-size: 28px;
+          }
+        }
+        .owl-nav{
+          top: 15%;
         }
       }
       .owl-nav{
@@ -1025,6 +1079,16 @@ header{
         h3 {
           font-size: 25px;
           margin-bottom: 15px;
+        }
+      }
+      .cat-slider{
+        .slide{
+          h3{
+            font-size: 25px;
+          }
+        }
+        .owl-nav{
+          top: 6%;
         }
       }
       .partner-slider{

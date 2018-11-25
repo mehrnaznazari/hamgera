@@ -52,6 +52,34 @@ jQuery(document).ready(function($){
       
     /********** End partners slider **********/
 
+    /********** category slider **********/
+      var owlc = $('.owl-carousel.cat-slider');
+      owlc.owlCarousel({
+          loop:false,
+          nav:true,
+          dots:false,
+          navText:'',
+          rtl:true,
+          margin:12,
+          //items:6,
+          responsive:{
+              0:{
+                  items:1
+              },
+              420:{
+                  items:2
+              },
+              650:{
+                  items:3
+              },
+              991:{
+                  items:4
+              }
+          }
+      })
+      
+    /********** End category slider **********/
+
     /********** Scrollbar in faq tabs **********/
       $(".tab-pane ul").mCustomScrollbar({
          theme: "light-thin",

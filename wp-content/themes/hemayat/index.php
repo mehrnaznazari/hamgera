@@ -261,57 +261,82 @@ Template Name: Home
             </div>
         </section>
 
-        <!-- <section class="section partners" id="partners">
-            <div class="container">
+        <section class="section partners" id="partners">
+             <div class="container">
                 <div class="row no-margin">
                     <div class="icon col-sm-12">
                         <img src="<?php echo get_template_directory_uri(); ?>/library/images/icon_1.png" alt="همکاران تجاری">
-                        <h2>همکاران تجاری</h2>
+                        <h2>همکاران حمایتی</h2>
                     </div>
                 </div>
-                <div class="row no-margin">
-                    <div class="col-md-3 col-sm-3 motion-capture">
-                        <h3>تست بازی</h3>
-                    </div>
-                    <div class="col-md-3 col-sm-3 infrastructure-equipment">
-                        <h3>استدیو صدا</h3>
-                    </div>
-                    <div class="col-md-3 col-sm-3 sounding">
-                        <h3>مشاوره حقوقی</h3>
-                    </div>
-                    <div class="col-md-3 col-sm-3 studio">
-                        <h3>آموزش</h3>
-                    </div>
-                </div>
-                <div class="owl-carousel owl-theme partner-slider">
-                   <?php
-                        $partner_slides = get_posts( array(
-                            'post_type'      => 'partner-slider',
-                            'posts_per_page' => -1,
-                            'post_status'    => 'publish',
-                            'post_parent'    => null
-                        ) );
-                         
-                        if ( $partner_slides ) {
-                            foreach ( $partner_slides as $post ) {
-                                setup_postdata( $post );
-                                $meta_data   = get_post_meta(get_the_ID());
-                                $partner_img = $meta_data["wpcf-partner-img"];
-                                $partner_url = $meta_data["wpcf-partner-url"];?>
-
-                                <div class="slide">
-                                    <img class="" src="<?= $partner_img[0]; ?>" alt="<?php the_title(); ?>" />
-                                    <h3><a href="<?= $partner_url[0] ?>"><?php the_title(); ?></a></h3>
+                <div class="owl-carousel owl-theme cat-slider">
+                    <?php
+                         $category_sliders    = get_posts( array(
+                             'post_type'      => 'category-slider',
+                             'posts_per_page' => -1,
+                             'post_status'    => 'publish',
+                             'post_parent'    => null
+                         ) );
+                          
+                        if ( $category_sliders ) {
+                             foreach ( $category_sliders as $post ) {
+                                 setup_postdata( $post );
+                                 $cat_data   = get_post_meta(get_the_ID());
+                                 $cat_name   = $cat_data["wpcf-category-name"];
+                                 $cat_class  = $cat_data["wpcf-category-class"];?>
+                                
+                                <div class="slide <?= $cat_class[0]; ?>">
+                                    <h3><?php echo $cat_name[0]; ?></h3>
                                 </div>
                             <?php    
                                 the_excerpt();
                             }
-                           wp_reset_postdata();
+                            wp_reset_postdata();
                         }
-                        ?>
+                    ?>
                 </div>
-            </div>
-        </section> -->
+                     <!-- <div class="row no-margin">
+                     <div class="col-md-3 col-sm-3 motion-capture">
+                         <h3></h3>
+                     </div>
+                     <div class="col-md-3 col-sm-3 infrastructure-equipment">
+                         <h3>استدیو صدا</h3>
+                     </div>
+                     <div class="col-md-3 col-sm-3 sounding">
+                         <h3>مشاوره حقوقی</h3>
+                     </div>
+                     <div class="col-md-3 col-sm-3 studio">
+                         <h3>آموزش</h3>
+                     </div> </div> -->
+                 <div class="owl-carousel owl-theme partner-slider">
+                    <?php
+                         $partner_slides = get_posts( array(
+                             'post_type'      => 'partner-slider',
+                             'posts_per_page' => -1,
+                             'post_status'    => 'publish',
+                             'post_parent'    => null
+                         ) );
+                          
+                         if ( $partner_slides ) {
+                             foreach ( $partner_slides as $post ) {
+                                 setup_postdata( $post );
+                                 $meta_data   = get_post_meta(get_the_ID());
+                                 $partner_img = $meta_data["wpcf-partner-img"];
+                                 $partner_url = $meta_data["wpcf-partner-url"];?>
+         
+                                 <div class="slide">
+                                     <img class="" src="<?= $partner_img[0]; ?>" alt="<?php the_title(); ?>" />
+                                     <h3><a href="<?= $partner_url[0] ?>"><?php the_title(); ?></a></h3>
+                                 </div>
+                             <?php    
+                                 the_excerpt();
+                             }
+                            wp_reset_postdata();
+                         }
+                         ?>
+                 </div>
+             </div>
+         </section>
 
         <section class="section get-support" id="getSupport">
             <div class="panel-group" id="register" role="tablist" aria-multiselectable="true">
@@ -393,22 +418,23 @@ Template Name: Home
 
             <div class="container">
                 <div class="row last-row">
+                    <?php 
+                        $supportive_post    = get_post( 243, ARRAY_A );
+                        $supportive_meta    = get_post_custom(243);
+                     ?> 
                     <div class="col-md-4 col-sm-6 icon-1">
-                        <a href="https://portal.ircg.ir/IRCGAssets/Pages/ShowForm?pid=4446" title="می خواهم تیمم را ثبت نام کنم">
-                            <!-- <span class="icon"></span> -->
-                            <span>می خواهم تیمم را ثبت نام کنم</span>
+                       <a href="<?php echo $supportive_meta['wpcf-first-section-url'][0] ?>" title="<?php echo $supportive_meta['wpcf-first-section'][0] ?>">
+                            <span><?php echo $supportive_meta['wpcf-first-section'][0] ?></span>
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-6 icon-2">
-                        <a href="https://portal.ircg.ir/IRCGAssets/Pages/ShowForm?pid=4435" title="می خواهم شرکتم را ثبت نام کنم">
-                            <!-- <span class="icon"></span> -->
-                            <span>می خواهم شرکتم را ثبت نام کنم</span>
+                        <a href="<?php echo $supportive_meta['wpcf-second-section-url'][0] ?>" title="<?php echo $supportive_meta['wpcf-second-section'][1] ?>">
+                            <span><?php echo $supportive_meta['wpcf-second-section'][0] ?></span>
                         </a>
                     </div>
                     <div class="col-md-4 icon-3" id="sponsor">
-                        <a href="https://portal.ircg.ir/IRCGAssets/Pages/ShowForm?pid=4432" title="می خواهم حامی تجاری شوم">
-                            <!-- <span class="icon"></span> -->
-                            <span>می خواهم حامی تجاری شوم</span>
+                        <a href="<?php echo $supportive_meta['wpcf-third-section-url'][0] ?>" title="<?php echo $supportive_meta['wpcf-third-section'][0] ?>">
+                            <span><?php echo $supportive_meta['wpcf-third-section'][0] ?></span>
                         </a>
                     </div>
                 </div>
@@ -463,7 +489,7 @@ Template Name: Home
             </div>
         </section>
 
-        <!-- <section class="section media" id="media">
+        <section class="section media" id="media">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 top-row">
@@ -541,7 +567,8 @@ Template Name: Home
                     </div>
                 </div>
             </div>
-        </section> -->
+
+        </section>
     </main>
 
 
